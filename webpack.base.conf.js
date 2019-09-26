@@ -76,7 +76,7 @@ module.exports = {
       },
     plugins:[
         new HtmlWebpackPlugin({
-            template: `${PATHS.src}/pug/pages/index/index.pug`,
+            template: `${PATHS.src}/pages/index/index.pug`,
             filename: './index.html',
             inject: 'body',
             hash: false
