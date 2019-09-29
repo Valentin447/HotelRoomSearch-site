@@ -9,6 +9,7 @@ const PATHS = {
   assets: 'assets',
 }
 
+
 module.exports = {
 
   externals: {
@@ -39,6 +40,7 @@ module.exports = {
             test: /\.pug$/,
             loader: 'pug-loader'
           },
+          
           {
             test: /\.scss$/,
             use: [
@@ -81,6 +83,13 @@ module.exports = {
             inject: 'body',
             hash: false
         }),
+        new HtmlWebpackPlugin({
+          template: `${PATHS.src}/pages/UiKit/ColorsAndType/ColorsType.pug`,
+          filename: './UiKit/ColorsAndType.html',
+          inject: 'body',
+          hash: false
+      }),
+
         new MiniCssExtractPlugin({
             filename: `${PATHS.assets}/css/[name].css`,
         }),
