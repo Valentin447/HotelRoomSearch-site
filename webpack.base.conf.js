@@ -84,7 +84,7 @@ module.exports = {
             hash: false
         }),
         new HtmlWebpackPlugin({
-          template: `${PATHS.src}/pages/UiKit/ColorsAndType/ColorsType.pug`,
+          template: `${PATHS.src}/pages/UiKit/ColorsAndType/ColorsAndType.pug`,
           filename: './UiKit/ColorsAndType.html',
           inject: 'body',
           hash: false

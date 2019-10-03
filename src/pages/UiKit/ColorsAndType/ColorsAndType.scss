@@ -1,0 +1,21 @@
+.ColorAndType{
+    background: #E5E5E5;;
+}
+.ColorAndTypeCenterLayer{
+    position: absolute;
+    width: 1440px;
+    height: 900px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    background: #fff;
+}
+
+// blocks
+.gray-logo{
+margin: 30px 0px 0px 30px;
+position: absolute;
+}
+
+@import '../../../blocks/colors-used/colors-used.scss';

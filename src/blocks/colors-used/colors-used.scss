@@ -1,0 +1,12 @@
+@import '../color-used/color-used.scss';
+@import '../color-used/__sampleColor/color-used__sampleColor.scss';
+@include color-used;
+
+.color-used{
+    margin: 0px 0px 20px 0px;
+}
+.colors-used{
+    position: relative;
+    left: 150px;
+    top: 145px;
+}
