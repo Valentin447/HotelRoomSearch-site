@@ -1,0 +1,30 @@
+.fonts-used__sample {
+display: flex;
+margin-bottom: 50px;
+}
+
+.fonts-used__sample:last-child {
+    margin-bottom: 0px;
+}
+
+.fonts-used__sample-text{
+    display: flex;  
+    max-width: 336px;
+    white-space: pre-wrap;  // TODO  Костыль для переноса строчки в UiKit - body
+
+}
+
+.fonts-used__sample-tag{
+    display: block;
+    position: relative;
+    margin-right: 30px;
+    min-width: 37px;
+    text-align: right;
+    font-family: 'Montserrat-Regular';
+    color: rgba(31, 32, 65, 0.25);
+}
+
+@import '_font/fonts-used__sample_font-H1.scss';
+@import '_font/fonts-used__sample_font-H2.scss';
+@import '_font/fonts-used__sample_font-H3.scss';
+@import '_font/fonts-used__sample_font-Body.scss';
