@@ -88,7 +88,13 @@ module.exports = {
           filename: './UiKit/ColorsAndType.html',
           inject: 'body',
           hash: false
-      }),
+        }),
+        new HtmlWebpackPlugin({
+          template: `${PATHS.src}/pages/UiKit/FormElements/FormElements.pug`,
+          filename: './UiKit/FormElements.html',
+          inject: 'body',
+          hash: false
+        }),
 
         new MiniCssExtractPlugin({
             filename: `${PATHS.assets}/css/[name].css`,
