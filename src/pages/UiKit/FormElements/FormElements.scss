@@ -16,9 +16,26 @@
     margin-top: 9px;
     background: #fff;
 }
-
+//signature
+.signatureTextFieldDefault{
+    position: absolute;
+    top: 140px;
+    left: 405px;
+    font-family: 'Montserrat-Regular';
+    font-size: 12px;
+    line-height: 15px;
+    color: $DarkShade50;
+}
 // blocks
 .gray-logo{
     margin: 30px 0px 0px 30px;
     position: absolute;
     }
+.text-field{
+    position: absolute;
+    left: 141px;
+    top: 143px;
+    }
+    
+    @import '../../../blocks/text-field/text-field.scss';
+    @import '../../../blocks/variables/variables.scss';

@@ -1,0 +1,15 @@
+@import '../../variables/variables.scss';
+
+.text-field__field{
+    width: 288px;
+    height: 42px;
+    border: 1px solid $DarkShade25;
+    border-radius: 4px;
+    padding: 0 15px;
+    
+}
+.text-field__field::placeholder{
+    font-family: 'Montserrat-Regular';
+    color: $DarkShade25;
+    font-size: 14px;
+}

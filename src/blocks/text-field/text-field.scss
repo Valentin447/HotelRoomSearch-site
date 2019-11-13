@@ -1,0 +1,7 @@
+.text-field{
+    display: flex;
+    flex-direction: column;
+}
+
+@import '__field/text-field__field.scss';
+@import '__title/text-field__title.scss';
