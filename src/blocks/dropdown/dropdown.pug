@@ -1,0 +1,7 @@
+mixin dropdown(textFirstElement)
+    .dropdownTitle
+        include ../title/title
+        +title("Dropdown", "")
+        ul.dropdown
+            li= textFirstElement
+            include __arrow/dropdown__arrow

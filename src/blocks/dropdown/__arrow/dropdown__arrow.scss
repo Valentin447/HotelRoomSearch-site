@@ -1,0 +1,19 @@
+.dropdown__arrow{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+}
+
+.dropdown__arrow-paint{
+    border: 2px solid $DarkShade50;
+    border-style: none solid solid none;
+    width: 7px;
+    height: 7px;
+    transform-origin: center center 0px;
+    transform: translate(0, -4px) rotate(45deg);
+}
+
+@import '../../variables/variables.scss';

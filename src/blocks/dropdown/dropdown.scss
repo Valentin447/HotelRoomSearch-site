@@ -1,0 +1,23 @@
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 303px;
+    height: 42px;
+    border: 1px solid $DarkShade25;
+    border-radius: 4px;
+    padding-left: 15px;
+    list-style-type: none;
+}
+.dropdown li{
+    display: contents;
+    font-family: "Montserrat-Regular";
+    font-size: 14px;
+    line-height: 24px;
+    vertical-align: middle;
+    color: $DarkShade75;
+}
+
+@import '../title/title.scss';
+@import '../variables/variables.scss';
+@import '__arrow/dropdown__arrow.scss';
