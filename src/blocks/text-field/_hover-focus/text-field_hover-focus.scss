@@ -1,0 +1,9 @@
+.text-field_hover-focus{
+    border: 1px solid $DarkShade50;
+}
+
+.text-field_hover-focus::placeholder{
+    color: $DarkShade75;
+}
+
+@import '../../variables/variables.scss';

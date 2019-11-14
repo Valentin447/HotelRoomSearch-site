@@ -6,5 +6,10 @@ html(lang="ru")
         .FormElementsCenterLayer
             include ../../../blocks/gray-logo/gray-logo
             include ../../../blocks/text-field/text-field
-            +textField('Email', 'Text Field', 'UiKitTextFieldDefault')
             span.signatureTextFieldDefault DEFAULT
+            span.signatureTextFieldHoverFocus HOVER / FOCUS
+
+            .FormElementLayout
+                +textField('Email', 'Text Field', 'UiKitTextFieldDefault')
+                +textField('This is pretty awesome', 'Text Field', 'UiKitTextFieldHoverFocus')(class='text-field_hover-focus')
+                
