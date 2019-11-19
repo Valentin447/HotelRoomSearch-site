@@ -29,11 +29,15 @@
     left: 405px;
 }
 .signatureTextFieldHoverFocus{
-    top: 226px;
-    left: 362px;
+    top: 227px;
+    left: 364px;
 }
 .signatureDropdownDefault{
     top: 311px;
+    left: 405px;
+}
+.signatureTextFieldMaskedDate{
+    top: 395px;
     left: 405px;
 }
 
@@ -44,11 +48,16 @@
     position: absolute;
     top: 143px;
     left: 141px;
-    grid-template-rows: 65px 64px 64px 60px 60px 60px 60px 60px 60px 60px 60px;
+    grid-template-rows: 65px 64px 69px 83px 64px 60px 60px 60px 60px 60px 60px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 19px;
     grid-auto-flow: column;
 }
+.dropdown-short-joint{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 // blocks
 .gray-logo{
