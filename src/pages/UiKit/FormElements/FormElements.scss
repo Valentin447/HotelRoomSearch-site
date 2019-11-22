@@ -8,7 +8,7 @@
 .FormElementsCenterLayer{
     position: absolute;
     width: 1440px;
-    height: 900px;
+    height: 1853px;
     left: 0; 
     right: 0; 
     margin-left: auto; 
@@ -48,12 +48,13 @@
     position: absolute;
     top: 143px;
     left: 141px;
-    grid-template-rows: 65px 64px 69px 83px 64px 60px 60px 60px 60px 60px 60px;
+    grid-template-rows: 65px 64px 69px 83px 86px 86px 64px 60px 60px 60px 60px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 19px;
     grid-auto-flow: column;
 }
-.dropdown-short-joint{
+
+.dropdown-date-joint{
     display: flex;
     justify-content: space-between;
 }
@@ -68,3 +69,4 @@
 @import '../../../blocks/text-field/text-field.scss';
 @import '../../../blocks/variables/variables.scss';
 @import '../../../blocks/dropdown/dropdown.scss';
+@import '../../../blocks/subscription/subscription.scss';

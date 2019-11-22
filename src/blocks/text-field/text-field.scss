@@ -3,6 +3,6 @@
     flex-direction: column;
 }
 
-@import '__field/text-field__field.scss';
+@import '../field/field.scss';
 @import '../title/title.scss';
 @import '_hover-focus/text-field_hover-focus.scss';

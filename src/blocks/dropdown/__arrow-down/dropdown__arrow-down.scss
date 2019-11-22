@@ -1,4 +1,4 @@
-.dropdown__arrow{
+.dropdown__arrow-down{
     display: flex;
     align-items: center;
     text-align: center;
@@ -7,7 +7,7 @@
     height: 42px;
 }
 
-.dropdown__arrow-paint{
+.dropdown__arrow-down-paint{
     border: 2px solid $DarkShade50;
     border-style: none solid solid none;
     width: 7px;

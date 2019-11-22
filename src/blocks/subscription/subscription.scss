@@ -1,0 +1,24 @@
+.subscription-field{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 42px;
+    border: 1px solid $DarkShade25;
+    border-radius: 4px;
+    padding-left: 15px;
+    list-style-type: none;
+}
+
+.subscription-field-text{
+    height: 40px;
+    border: none;
+}
+
+.subscription-field-text::placeholder{
+    font-family: 'Montserrat-Regular';
+    color: $DarkShade25;
+    font-size: 14px;
+}
+
+@import '../arrow/arrow.scss';

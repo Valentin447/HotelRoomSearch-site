@@ -1,0 +1,8 @@
+mixin subscription(textTitle)
+    .subscription
+        include ../title/title
+        include ../arrow/arrow
+        +title(textTitle, '')
+        .subscription-field
+            input.subscription-field-text(type="text", name="", placeholder="Email")
+            +arrow('arrow_forward')(class="arrow_gradient")

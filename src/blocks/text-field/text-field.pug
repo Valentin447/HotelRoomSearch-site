@@ -2,5 +2,5 @@ mixin textField(textPlaceholder, textTitle, fieldId)
     .text-field
             include ../title/title
             +title(textTitle, fieldId)
-            include __field/text-field__field
+            include ../field/field
             +field(textPlaceholder, fieldId)(class!=attributes.class)
