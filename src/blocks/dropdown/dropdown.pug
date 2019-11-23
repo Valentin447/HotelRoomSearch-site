@@ -1,7 +1,8 @@
 mixin dropdown(textFirstElement, textTitle)
     .dropdownTitle
         include ../title/title
+        include ../arrow/arrow
         +title(textTitle, "")
         ul.dropdown(class!=attributes.class)
             li= textFirstElement
-            include __arrow-down/dropdown__arrow-down
+            +arrow('expand_more')(class= "arrow_dark-shade-50")
