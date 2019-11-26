@@ -5,8 +5,8 @@
     justify-content: center;
     width: 40px;
     height: 40px;
+    color: $DarkShade50;
 }
 
 @import '../variables/variables.scss';
 @import '_gradient/arrow_gradient.scss';
-@import '_dark-shade-50/arrow_dark-shade-50.scss';
