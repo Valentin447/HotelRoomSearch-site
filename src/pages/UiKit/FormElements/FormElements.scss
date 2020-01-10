@@ -40,9 +40,14 @@
     top: 395px;
     left: 405px;
 }
-.signatureDropdownWidth266Default{
+.signatureDropdownRoomsDefault{
     top: 876px;
     left: 351px;
+}
+
+.signatureDropdownRoomsExpanded{
+    top: 960px;
+    left: 337px;
 }
 
 // Layout
@@ -52,7 +57,7 @@
     position: absolute;
     top: 143px;
     left: 141px;
-    grid-template-rows: 65px 64px 69px 83px 86px 86px 145px 64px 60px 60px 60px;
+    grid-template-rows: 65px 66px 67px 85px 86px 85px 146px 65px 60px 60px 60px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 19px;
     grid-auto-flow: column;

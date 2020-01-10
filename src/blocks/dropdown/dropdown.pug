@@ -1,8 +1,12 @@
-mixin dropdown(textFirstElement, textTitle, colorArrow)
-    .dropdownTitle
-        include ../title/title
-        include ../arrow/arrow
-        +title(textTitle, "")
-        ul.dropdown(class!=attributes.class)
-            li= textFirstElement
-            +arrow('expand_more')(class= "arrow_dark-shade-50")
+mixin dropdown(textToggle, textTitle, colorArrow)
+    .dropdown(class!=attributes.class)
+        .dropdownTitle
+            include ../title/title
+            include ../arrow/arrow
+            include __toggle/dropdown__toggle
+
+
+
+            +title(textTitle, "")
+        .dropdown__toggle
+            +dropdown__toggle(textToggle)

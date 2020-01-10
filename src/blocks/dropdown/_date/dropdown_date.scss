@@ -1,5 +1,7 @@
 .dropdown_date{
-    width: 133px;
+    width: 150px;
+    display: flex;    
+    flex-direction: column;
 }
 
 .dropdown_date .dropdown__arrow-down-paint{

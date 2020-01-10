@@ -1,25 +1,20 @@
 .dropdown {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 303px;
-    height: 42px;
-    border: 1px solid $DarkShade25;
-    border-radius: 4px;
-    padding-left: 15px;
-    list-style-type: none;
+    display: flex; 
+    flex-direction: column;
+    position: relative;
+    width: 320px;
 }
-.dropdown li{
-    display: contents;
+.dropdown div{  
+    display: flex;
     font-family: "Montserrat-Regular";
     font-size: 14px;
     line-height: 24px;
     vertical-align: middle;
-    color: $DarkShade75;
 }
 
 @import '../title/title.scss';
 @import '../variables/variables.scss';
 @import '_date/dropdown_date.scss';
 @import '_filter-date/dropdown_filter-date.scss';
-@import '_width-266/dropdown_width-266.scss';
+@import '_rooms/dropdown_rooms.scss';
+@import '__toggle/dropdown__toggle.scss';
