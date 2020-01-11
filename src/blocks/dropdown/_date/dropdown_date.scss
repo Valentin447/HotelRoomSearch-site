@@ -4,6 +4,6 @@
     flex-direction: column;
 }
 
-.dropdown_date .dropdown__arrow-down-paint{
-    transform: translate(0, -2px) rotate(45deg);
+.dropdown_date .dropdown__list{
+    display: none;
 }

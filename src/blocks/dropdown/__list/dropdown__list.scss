@@ -1,0 +1,15 @@
+.dropdown .dropdown__list{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    background-color: white;
+    z-index: 5;
+    padding-left: 15px;
+
+    border: 1px solid $DarkShade25;
+    border-radius: 0 0 4px 4px;
+    border-top: none;
+}
+
+@import '_open/dropdown__list_open.scss';

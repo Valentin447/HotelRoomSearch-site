@@ -6,5 +6,6 @@
     border: 1px solid $DarkShade25;
     border-radius: 4px;
     padding-left: 15px;
-    
 }
+
+@import '_noRadius/dropdown__toggle_noRadius.scss';
