@@ -1,4 +1,7 @@
-mixin dropdown__row()
+include ../__counter/dropdown__counter
+
+mixin dropdown__row(text, counterValue)
     .dropdown__row
-        spawn.dropdown__row-text спальни
+        spawn.dropdown__row-text=text
+        +dropdown__counter(counterValue)
 

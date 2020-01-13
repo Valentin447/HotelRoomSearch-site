@@ -1,0 +1,16 @@
+.dropdown__counter-value{
+    height: 30px;
+    min-width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1px;
+}
+
+.dropdown__counter-value-number{
+    color: $DarkShade100;
+    font-family: 'Montserrat-Bold';
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+}

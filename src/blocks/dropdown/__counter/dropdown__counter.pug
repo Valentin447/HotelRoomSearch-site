@@ -1,3 +1,11 @@
-mixin dropdown__counter()
+include ../__counter-button/dropdown__counter-button
+include ../__counter-value/dropdown__counter-value
+
+
+mixin dropdown__counter(counterValue)
     .dropdown__counter
+        +dropdown__counter-button(counterValue,'-')
+        +dropdown__counter-value(counterValue)
+        +dropdown__counter-button(counterValue,'+')
+
         

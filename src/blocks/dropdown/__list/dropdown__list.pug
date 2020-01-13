@@ -1,6 +1,8 @@
-mixin dropdown__list()
+mixin dropdown__list(classModifier)
     include ../__row/dropdown__row
     .dropdown__list
-        +dropdown__row()
-        +dropdown__row()
-        +dropdown__row()
+        case classModifier
+            when 'dropdown_rooms'
+                +dropdown__row('спальни', '2')
+                +dropdown__row('кровати', '2')
+                +dropdown__row('ванные комнаты', '0')

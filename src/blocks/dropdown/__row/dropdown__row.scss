@@ -1,15 +1,16 @@
 .dropdown__row .dropdown__row-text{
 font-family: 'Montserrat-Bold';
 font-style: normal;
-font-weight: bold;
 font-size: 12px;
 line-height: 15px;
 text-transform: uppercase;
 }
 
 .dropdown__row{
-    display: flex;
+    display: inline-flex;
+    justify-content: space-between;
     align-items: center;
     height: 37px;
     vertical-align: middle;
+    padding-right: 7px;
 }

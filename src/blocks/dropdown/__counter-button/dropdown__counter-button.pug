@@ -1,0 +1,9 @@
+mixin dropdown__counter-button(counterValue, icon)
+    if(counterValue=='0'&&icon==='-')
+        div(class=['dropdown__counter-button','dropdown__counter-button_not-activ'])
+            span.dropdown__counter-button-icon=icon
+    else
+        .dropdown__counter-button
+            span.dropdown__counter-button-icon=icon
+    
+        

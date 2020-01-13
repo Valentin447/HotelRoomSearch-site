@@ -1,5 +1,5 @@
-mixin dropdown(textToggle, textTitle, colorArrow)
-    .dropdown(class!=attributes.class)
+mixin dropdown(textToggle, textTitle, classModifier)
+    .dropdown(class!=classModifier)
         .dropdownTitle
             include ../title/title
             include __list/dropdown__list
@@ -8,5 +8,5 @@ mixin dropdown(textToggle, textTitle, colorArrow)
             +title(textTitle, "")
         .dropdown__toggle
             +dropdown__toggle(textToggle)
-        +dropdown__list()
+        +dropdown__list(classModifier)
             
