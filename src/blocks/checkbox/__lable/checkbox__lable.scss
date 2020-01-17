@@ -1,0 +1,10 @@
+.checkbox__lable{
+    font-family: 'Montserrat-Regular';
+    font-size: 14px;
+    line-height: 18px;
+    color: $DarkShade50;
+    display: flex;
+    align-items: center;
+}
+
+@import '../../variables/variables.scss';

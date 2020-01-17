@@ -1,0 +1,13 @@
+.checkbox_checked .checkbox__button-paint{
+    border-color: $Purple;
+}
+
+.checkbox_checked .checkbox__mark-rectangle{
+    display: block;
+}
+
+.checkbox_checked .checkbox__mark{
+    display: block;
+}
+
+@import '../../variables/variables.scss';

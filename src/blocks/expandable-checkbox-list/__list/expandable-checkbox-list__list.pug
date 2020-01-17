@@ -1,0 +1,8 @@
+include ../../checkbox/checkbox
+
+mixin expandable-checkbox-list__list(listId, ...nameItem)
+    .expandable-checkbox-list__list
+        each name in nameItem
+            +checkbox(listId, name)
+
+

@@ -1,0 +1,10 @@
+.expandable-checkbox-list__title{
+    width: 266px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@import '__list/expandable-checkbox-list__list.scss';
+@import '_closed/expandable-checkbox-list_closed.scss';

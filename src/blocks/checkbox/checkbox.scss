@@ -1,0 +1,10 @@
+.checkbox{
+    display: grid;
+    grid-template-columns: [button] 30px [lable-text] 240px;
+    grid-template-rows: [standard] 22px [rich] 8px;
+}
+
+@import '__lable/checkbox__lable.scss';
+@import '__button/checkbox__button.scss';
+@import '__mark/checkbox__mark.scss';
+@import '_checked/checkbox_checked.scss';

@@ -8,6 +8,8 @@ html(lang="ru")
             include ../../../blocks/text-field/text-field
             include ../../../blocks/dropdown/dropdown
             include ../../../blocks/subscription/subscription
+            include ../../../blocks/expandable-checkbox-list/expandable-checkbox-list
+            
             span.signature.signatureTextFieldDefault DEFAULT
             span.signature.signatureTextFieldHoverFocus HOVER / FOCUS
             span.signature.signatureDropdownDefault DEFAULT
@@ -27,4 +29,5 @@ html(lang="ru")
                 +subscription('subscription text field')
                 +dropdown('2 спальни, 2 кровати...', 'dropdown', 'dropdown_rooms')
                 +dropdown('2 спальни, 2 кровати...', 'dropdown', 'dropdown_rooms')
-                
+                +expandable-checkbox-list('expandable checkbox list', 'expandable-checkbox-list-1', 'Завтрак')
+                +expandable-checkbox-list('expandable checkbox list', 'expandable-checkbox-list-2', 'Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь', 'Телевизор', 'Шампунь')

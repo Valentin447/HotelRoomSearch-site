@@ -1,0 +1,7 @@
+include __button/checkbox__button
+include __lable/checkbox__lable
+
+mixin checkbox(listId, nameItem, richText)
+    .checkbox
+        +checkbox__button(listId, nameItem)
+        +checkbox__lable(listId, nameItem)

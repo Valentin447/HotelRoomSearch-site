@@ -3,10 +3,14 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     color: $DarkShade50;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
 }
 
 @import '../variables/variables.scss';
 @import '_gradient/arrow_gradient.scss';
+@import '_up/arrow_up.scss';
