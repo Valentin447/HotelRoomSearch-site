@@ -1,0 +1,9 @@
+.radio-button_checked .radio-button-circle{
+    border-color: $Purple;
+}
+
+.radio-button_checked .radio-button-point{
+    display: flex;
+}
+
+@import './../../variables/variables.scss';

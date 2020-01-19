@@ -1,6 +1,7 @@
 import './../../../blocks/expandable-checkbox-list/expandable-checkbox-list';
 import './../../../blocks/dropdown/dropdown';
 import './../../../blocks/checkbox/checkbox';
+import './../../../blocks/radio-button/radio-button';
 
 
 let dropdownOpen = document.querySelectorAll('.FormElements .dropdown_rooms .dropdown__list');
@@ -29,3 +30,9 @@ let checkbox = checkboxButtons[0].querySelectorAll('.checkbox');
     // Отмечаем элементы 2 и 3
 checkbox[1].classList.add('checkbox_checked');
 checkbox[2].classList.add('checkbox_checked');
+
+// Делаем Radio Buttons как на UiKit по умолчанию
+let radioButton = document.querySelectorAll('.radio-button');
+let radioButtonInput = radioButton[0].querySelector('input');
+console.log(radioButtonInput);
+radioButtonInput.click();

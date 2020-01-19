@@ -72,7 +72,7 @@
     display: grid;
     position: absolute;
     left: 446px;
-    grid-template-rows: 65px 66px 67px 85px 86px 85px 146px 65px 206px 45px 275px 130px;
+    grid-template-rows: 149px 66px 67px 85px 86px 85px 146px 65px 206px 45px 275px 130px;
     grid-template-columns: 320px;
     grid-gap: 19px;
     grid-auto-flow: column;
@@ -97,3 +97,4 @@
 @import '../../../blocks/expandable-checkbox-list/expandable-checkbox-list.scss';
 @import '../../../blocks/icon-text/icon-text.scss';
 @import '../../../blocks/checkbox-buttons/checkbox-buttons.scss';
+@import '../../../blocks/radio-buttons/radio-buttons.scss';

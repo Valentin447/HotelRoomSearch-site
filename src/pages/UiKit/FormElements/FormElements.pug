@@ -11,6 +11,7 @@ html(lang="ru")
             include ../../../blocks/expandable-checkbox-list/expandable-checkbox-list
             include ../../../blocks/icon-text/icon-text
             include ../../../blocks/checkbox-buttons/checkbox-buttons
+            include ../../../blocks/radio-buttons/radio-buttons
             
             span.signature.signatureTextFieldDefault DEFAULT
             span.signature.signatureTextFieldHoverFocus HOVER / FOCUS
@@ -40,3 +41,4 @@ html(lang="ru")
 
                 .FormElement-column-2
                     +checkbox-buttons('Checkbox Buttons', 'checkbox-buttons-1', 'Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)')
+                    +radio-buttons('Radio Buttons', 'RadioButtonsFormElement', 'Мужчина', 'Женщина')

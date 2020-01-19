@@ -1,0 +1,42 @@
+.radio-button{
+    display: flex;
+    align-items: center;
+}
+
+.radio-button-input{
+    display:none;
+}
+
+.radio-button-label{
+    padding-left: 10px;
+    font-family: 'Montserrat-Regular';
+    font-size: 14px;
+    line-height: 24px;
+    color: $DarkShade75;
+    margin-right: 21px;
+}
+
+.radio-button-circle{
+    display: flex;
+    align-items: center;
+    height: 18px;
+    width: 18px;
+    border-radius: 10px;
+    border: 1px solid $DarkShade25;
+}
+
+.radio-button{
+    position: relative;
+}
+
+.radio-button-point{
+    display: none;
+    position: absolute;
+    left: 4px;
+    height: 12px;
+    width: 12px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 10px;
+}
+
+@import '_checked/radio-button_checked.scss';

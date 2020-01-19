@@ -1,0 +1,9 @@
+include ../title/title
+include ../radio-button/radio-button
+
+mixin radio-buttons(textTitle, idRadioButon, ...value)
+    .radio-buttons
+        +title(textTitle)
+        .radio-buttons-list
+            each val in value
+                +radio-button(idRadioButon, val)
