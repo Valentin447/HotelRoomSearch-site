@@ -1,0 +1,6 @@
+.checkbox-buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+@import '__list/checkbox-buttons__list.scss';

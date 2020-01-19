@@ -1,0 +1,8 @@
+include ../title/title
+include __list/checkbox-buttons__list
+
+mixin checkbox-buttons(textTitle, listId, ...nameItem)
+    .checkbox-buttons
+        +title(textTitle)
+        +checkbox-buttons__list(listId, ...nameItem)
+            
