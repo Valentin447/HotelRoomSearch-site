@@ -1,0 +1,10 @@
+.icon-text__text{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 48px;
+    margin-left: 10px;
+    color: $DarkShade75;
+}
+
+@import './../../variables/variables.scss';

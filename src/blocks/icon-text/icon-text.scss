@@ -1,0 +1,21 @@
+.icon-text{
+    width: 280px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-text-border-bottom{
+    border-bottom: 1px solid $DarkShade10;
+    border-left: none;
+    width: 280px;
+    height: 88px;
+    display: flex;
+    align-items: center;
+}
+
+@import './../variables/variables.scss';
+@import '__icon/icon-text__icon.scss';
+@import '__text/icon-text__text.scss';
+@import '__title/icon-text__title.scss';
+@import '__description/icon-text__description.scss';

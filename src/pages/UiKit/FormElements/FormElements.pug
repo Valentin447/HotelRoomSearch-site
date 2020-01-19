@@ -9,6 +9,7 @@ html(lang="ru")
             include ../../../blocks/dropdown/dropdown
             include ../../../blocks/subscription/subscription
             include ../../../blocks/expandable-checkbox-list/expandable-checkbox-list
+            include ../../../blocks/icon-text/icon-text
             
             span.signature.signatureTextFieldDefault DEFAULT
             span.signature.signatureTextFieldHoverFocus HOVER / FOCUS
@@ -31,3 +32,6 @@ html(lang="ru")
                 +dropdown('2 спальни, 2 кровати...', 'dropdown', 'dropdown_rooms')
                 +expandable-checkbox-list('expandable checkbox list', 'expandable-checkbox-list-1', 'Завтрак')
                 +expandable-checkbox-list('expandable checkbox list', 'expandable-checkbox-list-2', 'Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь', 'Телевизор', 'Шампунь')
+                .icon-text-list
+                    +icon-text('insert_emoticon', 'Комфорт', 'Шумопоглощающие стены')
+                    +icon-text('location_city', 'Удобство', 'Окно в каждой из спален')
