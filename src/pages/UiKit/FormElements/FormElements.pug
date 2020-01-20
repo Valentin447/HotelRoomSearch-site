@@ -4,6 +4,7 @@ html(lang="ru")
         title= 'Form Elements'
     body.FormElements
         .FormElementsCenterLayer
+            include ../../../blocks/title/title
             include ../../../blocks/gray-logo/gray-logo
             include ../../../blocks/text-field/text-field
             include ../../../blocks/dropdown/dropdown
@@ -12,6 +13,7 @@ html(lang="ru")
             include ../../../blocks/icon-text/icon-text
             include ../../../blocks/checkbox-buttons/checkbox-buttons
             include ../../../blocks/radio-buttons/radio-buttons
+            include ../../../blocks/toggle/toggle
             
             span.signature.signatureTextFieldDefault DEFAULT
             span.signature.signatureTextFieldHoverFocus HOVER / FOCUS
@@ -42,3 +44,7 @@ html(lang="ru")
                 .FormElement-column-2
                     +checkbox-buttons('Checkbox Buttons', 'checkbox-buttons-1', 'Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)')
                     +radio-buttons('Radio Buttons', 'RadioButtonsFormElement', 'Мужчина', 'Женщина')
+
+                    +title('Toggle')
+                    +toggle('Получать спецпредложения', 'FormElement-column-2-toggle-1')
+                    +toggle('Получать спецпредложения', 'FormElement-column-2-toggle-2')

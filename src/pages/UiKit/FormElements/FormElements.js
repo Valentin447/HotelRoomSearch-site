@@ -2,6 +2,7 @@ import './../../../blocks/expandable-checkbox-list/expandable-checkbox-list';
 import './../../../blocks/dropdown/dropdown';
 import './../../../blocks/checkbox/checkbox';
 import './../../../blocks/radio-button/radio-button';
+import './../../../blocks/toggle/toggle';
 
 
 let dropdownOpen = document.querySelectorAll('.FormElements .dropdown_rooms .dropdown__list');
@@ -34,5 +35,11 @@ checkbox[2].classList.add('checkbox_checked');
 // Делаем Radio Buttons как на UiKit по умолчанию
 let radioButton = document.querySelectorAll('.radio-button');
 let radioButtonInput = radioButton[0].querySelector('input');
-console.log(radioButtonInput);
 radioButtonInput.click();
+
+// Делаем Toggle как на UiKit по умолчанию
+let toggle = document.querySelectorAll('.toggle');
+let input = toggle[0].querySelector('.toggle__switch-input');
+console.log(toggle[0]);
+input.setAttribute('checked', 'checked');
+toggle[0].classList.add('toggle__switch_on');

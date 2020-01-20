@@ -1,0 +1,7 @@
+include __switch/toggle__switch
+include __label/toggle__label
+
+mixin toggle(text, id)
+    .toggle     
+        +toggle__switch()
+        +toggle__label(text, id)

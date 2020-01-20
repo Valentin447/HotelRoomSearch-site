@@ -1,0 +1,16 @@
+.toggle__label{
+    font-family: 'Montserrat-Regular';
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 50px;
+    color: $DarkShade75;
+    user-select: none;
+}
+
+.toggle__label-center{
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+@import '../../variables/variables.scss';
