@@ -3,6 +3,7 @@ import './../../../blocks/dropdown/dropdown';
 import './../../../blocks/checkbox/checkbox';
 import './../../../blocks/radio-button/radio-button';
 import './../../../blocks/toggle/toggle';
+import './../../../blocks/like-button/like-button';
 
 
 let dropdownOpen = document.querySelectorAll('.FormElements .dropdown_rooms .dropdown__list');
@@ -40,6 +41,12 @@ radioButtonInput.click();
 // Делаем Toggle как на UiKit по умолчанию
 let toggle = document.querySelectorAll('.toggle');
 let input = toggle[0].querySelector('.toggle__switch-input');
-console.log(toggle[0]);
 input.setAttribute('checked', 'checked');
 toggle[0].classList.add('toggle__switch_on');
+
+// Делаем Like Button как на UiKit по умолчанию
+let likeButtons = document.querySelectorAll('.like-button');
+let likeButtonsChecked = likeButtons[1].querySelector('.like-button-input:checked');
+if(!likeButtonsChecked){
+    likeButtons[1].click();
+}

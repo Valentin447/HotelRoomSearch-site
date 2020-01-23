@@ -1,0 +1,10 @@
+include __counter/like-button__counter
+
+mixin like-button(counter)
+    .like-button
+        input.like-button-input(type="checkbox")
+        .like-button-border
+            .like-button-fild
+                .like-button-favorite-center
+                    i.material-icons.like-button-favorite= 'favorite_border'
+                +like-button__counter(counter)

@@ -1,0 +1,49 @@
+.like-button-border{
+    position: relative;
+    display: flex;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    align-items: center;
+    background-color: $DarkShade25;
+}
+
+.like-button-fild{
+    position: relative;
+    display: flex;
+    width: 38px;
+    height: 18px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    z-index: 3;
+    left: 1px;
+}
+
+.like-button-favorite-center{
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 18px;
+    height: 18px;
+}
+
+.like-button-favorite{
+    position: absolute;
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 9px;
+    left: 4px;
+    color: $DarkShade25;
+    cursor: default;
+}
+
+.like-button-input{
+    display: none;
+}
+
+@import '__counter/like-button__counter.scss';
+@import '../variables/variables.scss';
+@import '_mark/like-button_mark.scss';

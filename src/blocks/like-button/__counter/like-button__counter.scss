@@ -1,0 +1,20 @@
+.like-button__counter{
+    position: absolute;
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: $DarkShade25;
+    cursor: default;
+}
+
+.like-button__counter-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12px;
+}
+
+@import '../../variables/variables.scss';

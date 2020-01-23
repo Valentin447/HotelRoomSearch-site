@@ -1,0 +1,13 @@
+.like-button_mark .like-button-favorite{
+    color: $Purple;
+}
+
+.like-button_mark .like-button-border{
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.like-button_mark .like-button__counter{
+    color: $Purple;
+}
+
+@import '../../variables/variables.scss';

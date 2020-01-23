@@ -72,7 +72,7 @@
     display: grid;
     position: absolute;
     left: 446px;
-    grid-template-rows: 149px 75px 11px 15px 86px 85px 146px 65px 206px 45px 275px 130px;
+    grid-template-rows: 149px 75px 11px 15px 46px 12px 20px;
     grid-template-columns: 320px;
     grid-gap: 19px;
     grid-auto-flow: column;
@@ -89,7 +89,14 @@
     margin: 30px 0px 0px 30px;
     position: absolute;
     }
-    
+
+.form-element-like-buttons{
+    display: flex;
+}
+.form-element-like-buttons-dont-like{
+    margin-right: 10px;
+}
+
 @import '../../../blocks/text-field/text-field.scss';
 @import '../../../blocks/variables/variables.scss';
 @import '../../../blocks/dropdown/dropdown.scss';
@@ -99,3 +106,4 @@
 @import '../../../blocks/checkbox-buttons/checkbox-buttons.scss';
 @import '../../../blocks/radio-buttons/radio-buttons.scss';
 @import '../../../blocks/toggle/toggle.scss';
+@import '../../../blocks/like-button/like-button.scss';
