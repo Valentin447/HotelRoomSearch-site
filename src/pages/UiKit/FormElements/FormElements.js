@@ -4,6 +4,7 @@ import './../../../blocks/checkbox/checkbox';
 import './../../../blocks/radio-button/radio-button';
 import './../../../blocks/toggle/toggle';
 import './../../../blocks/like-button/like-button';
+import './../../../blocks/rate-button/rate-button';
 
 
 let dropdownOpen = document.querySelectorAll('.FormElements .dropdown_rooms .dropdown__list');

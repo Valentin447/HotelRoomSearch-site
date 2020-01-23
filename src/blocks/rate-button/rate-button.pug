@@ -1,0 +1,14 @@
+include __star/rate-button__star
+
+
+
+mixin rate-button(rating)
+    - var n = 0
+    .rate-button
+        while n < 5
+            - n++
+            if(n < rating+1)
+                +rate-button__star('star')
+            else
+                +rate-button__star('star_border')
+        

@@ -15,6 +15,7 @@ html(lang="ru")
             include ../../../blocks/radio-buttons/radio-buttons
             include ../../../blocks/toggle/toggle
             include ../../../blocks/like-button/like-button
+            include ../../../blocks/rate-button/rate-button
             
             span.signature.signatureTextFieldDefault DEFAULT
             span.signature.signatureTextFieldHoverFocus HOVER / FOCUS
@@ -56,3 +57,10 @@ html(lang="ru")
                             +like-button('2')
                         .form-element-like-buttons-like
                             +like-button('11')
+                    
+                    +title('rate button')
+                    .form-element-rate-button
+                        .form-element-rate-button-1
+                            +rate-button(4)
+                        .form-element-rate-button-2
+                            +rate-button(5)
