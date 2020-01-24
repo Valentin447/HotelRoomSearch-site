@@ -15,7 +15,7 @@ for(let counter of dropdownCounters){
 
     buttonMinus.onclick = function(){
         if(value > 0){
-            value = value - 1;
+            value--;
             inputValue.value = value;
         }
         CheckValue();

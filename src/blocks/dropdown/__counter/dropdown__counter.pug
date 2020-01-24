@@ -2,10 +2,10 @@ include ../__counter-button/dropdown__counter-button
 include ../__counter-value/dropdown__counter-value
 
 
-mixin dropdown__counter(counterValue)
+mixin dropdown__counter(counterRow)
     .dropdown__counter
-        +dropdown__counter-button(counterValue,'-')
-        +dropdown__counter-value(counterValue)
-        +dropdown__counter-button(counterValue,'+')
+        +dropdown__counter-button('-')
+        +dropdown__counter-value(counterRow)
+        +dropdown__counter-button('+')
 
         

@@ -5,5 +5,4 @@ for(let checkbox of checkboxs){
     button.onclick = function(){
         checkbox.classList.toggle('checkbox_checked');
     }
-
 }

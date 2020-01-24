@@ -13,6 +13,12 @@ dropdownOpen[1].className += " dropdown__list_open";
 let dropdownToogleNoRadius = document.querySelectorAll('.FormElements .dropdown_rooms .dropdown__toggle');
 dropdownToogleNoRadius[1].className += " dropdown__toogle_noRadius";
 
+// Делаем Dropdown как на UiKit по умолчанию
+let dropdowns = document.querySelectorAll('.dropdown');
+dropdowns[5].classList.add('dropdown_open');
+dropdowns[6].classList.add('dropdown_open');
+dropdowns[6].querySelector('.dropdown__button-clean-input').classList.add('dropdown__button-clean_hidden');
+
 // Делаем Expandable Checkbox List как на UiKit по умолчанию
 let expandableCheckboxList = document.querySelectorAll('.expandable-checkbox-list');
 let openCheckboxList = expandableCheckboxList[1].querySelector('.expandable-checkbox-list__title-arrow .arrow');

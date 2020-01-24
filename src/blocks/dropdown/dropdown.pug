@@ -1,4 +1,4 @@
-mixin dropdown(textToggle, textTitle, classModifier)
+mixin dropdown(textToggle, textTitle, classModifier, textRow1, textRow2, textRow3, counterRow1, counterRow2, counterRow3)
     .dropdown(class!=classModifier)
         .dropdownTitle
             include ../title/title
@@ -8,5 +8,5 @@ mixin dropdown(textToggle, textTitle, classModifier)
             +title(textTitle, "")
         .dropdown__toggle
             +dropdown__toggle(textToggle)
-        +dropdown__list(classModifier)
+        +dropdown__list(textRow1, textRow2, textRow3, counterRow1, counterRow2, counterRow3)
             

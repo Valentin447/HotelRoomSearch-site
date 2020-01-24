@@ -5,11 +5,18 @@
     top: 64px;
     background-color: white;
     z-index: 5;
-    padding: 2px 0 4px 14px;
+    padding: 6px 7px 0px 14px;
 
     border: 1px solid $DarkShade50;
     border-radius: 0 0 4px 4px;
     border-top: none;
 }
 
-@import '_open/dropdown__list_open.scss';
+.dropdown__list-buttons{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    height: 40px;
+}
+
+@import '../../variables/variables.scss';

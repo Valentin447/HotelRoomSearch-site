@@ -1,8 +1,12 @@
-mixin dropdown__list(classModifier)
+include ../__button-enter/dropdown__button-enter
+include ../__button-clean/dropdown__button-clean
+
+mixin dropdown__list(textRow1, textRow2, textRow3, counterRow1, counterRow2, counterRow3)
     include ../__row/dropdown__row
     .dropdown__list
-        case classModifier
-            when 'dropdown_rooms'
-                +dropdown__row('спальни', '2')
-                +dropdown__row('кровати', '2')
-                +dropdown__row('ванные комнаты', '0')
+        +dropdown__row(textRow1, counterRow1)
+        +dropdown__row(textRow2, counterRow2)
+        +dropdown__row(textRow3, counterRow3)
+        .dropdown__list-buttons
+            +dropdown__button-enter()
+            +dropdown__button-clean()

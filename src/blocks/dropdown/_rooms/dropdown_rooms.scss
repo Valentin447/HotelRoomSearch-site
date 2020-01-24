@@ -4,11 +4,16 @@
 }
 
 .dropdown_rooms .dropdown__list{
-    width: 250px;
+    width: 243px;
 }
 
 .dropdown_rooms .arrow .material-icons{
     color: $DarkShade75;
 }
+
+.dropdown_rooms .dropdown__list-buttons{
+    display: none;
+}
+
 
 @import '../../variables/variables.scss';

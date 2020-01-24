@@ -1,16 +1,28 @@
 .dropdown__row .dropdown__row-text{
-font-family: 'Montserrat-Bold';
-font-style: normal;
-font-size: 12px;
-line-height: 15px;
-text-transform: uppercase;
+    position: absolute;
+    bottom: -6px;
+    display: flex;
+    font-family: 'Montserrat-Bold';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    width: 140px;
+    cursor: default;
+}
+
+.dropdown__row-text-position{
+    display: flex;
+    position: relative;
+    width: 140px;
 }
 
 .dropdown__row{
+    position: relative;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    height: 37px;
+    height: 30px;
     vertical-align: middle;
-    padding-right: 7px;
+    margin-bottom: 7px;
 }

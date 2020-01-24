@@ -1,0 +1,14 @@
+.dropdown__button-clean-input{
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $DarkShade50;
+    border: none;
+    background: none;
+}
+
+@import '../../variables/variables.scss';
+@import './_hidden/dropdown__button-clean_hidden.scss';

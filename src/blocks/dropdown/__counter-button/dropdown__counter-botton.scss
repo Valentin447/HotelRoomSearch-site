@@ -1,7 +1,7 @@
 .dropdown__counter-button{
     width: 30px;
     height: 30px;
-    border: 1px solid $DarkShade50;
+    border: 1px solid $DarkShade25;
     border-radius: 15px;
     justify-content: center;
     display: flex;
@@ -17,7 +17,7 @@
     line-height: 22px;
     display: flex;
     align-items: center;
-    color: $DarkShade50;
+    color: $DarkShade25;
 }
 
 @import '_not-activ/dropdown__counter-button_not-activ.scss';
