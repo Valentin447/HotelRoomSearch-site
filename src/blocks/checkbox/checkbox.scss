@@ -1,10 +1,24 @@
 .checkbox{
-    display: grid;
-    grid-template-columns: [button] 30px [lable-text] 240px;
-    grid-template-rows: [standard] 22px [rich] 8px;
+    display: flex;
+    margin-bottom: 5px;
+}
+.checkbox-button-position{
+    margin-right: 10px;
+    display: flex;
+}
+
+.checkbox-lable-position{
+    padding-top: 1px;
+    margin-bottom: 6px;
+}
+
+.checkbox-text-rich-position{
+    margin-bottom: 4px;
 }
 
 @import '__lable/checkbox__lable.scss';
 @import '__button/checkbox__button.scss';
 @import '__mark/checkbox__mark.scss';
 @import '_checked/checkbox_checked.scss';
+@import './__text-rich/checkbox__text-rich.scss';
+@import './_rich/checkbox_rich.scss';
