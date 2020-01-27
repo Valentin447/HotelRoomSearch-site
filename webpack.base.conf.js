@@ -100,7 +100,8 @@ module.exports = {
             filename: `${PATHS.assets}/css/[name].css`,
         }),
         new CopyWebpackPlugin([
-          {from:`${PATHS.src}/static/fonts/`, to:`${PATHS.assets}/fonts/`}
+          {from:`${PATHS.src}/static/fonts/`, to:`${PATHS.assets}/fonts/`},
+          {from:`${PATHS.src}/static/img/`, to:`${PATHS.assets}/img/`}
         ])
     ],
 

@@ -57,3 +57,12 @@ let likeButtonsChecked = likeButtons[1].querySelector('.like-button-input:checke
 if(!likeButtonsChecked){
     likeButtons[1].click();
 }
+
+// Делаем Like Button в блоке Comment как на UiKit по умолчанию
+let comments = document.querySelectorAll('.comment');
+let commentLikeButtons = comments[0].querySelector('.like-button-input');
+let commentLikeButtonsChecked = comments[0].querySelector('.like-button-input:checked');
+console.log(commentLikeButtonsChecked);
+if(!commentLikeButtonsChecked){
+    commentLikeButtons.click();
+}
