@@ -1,0 +1,29 @@
+.range-slider{
+    display: flex;
+    flex-direction: column;
+    width: 266px;
+}
+
+.range-slider__top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.range-slider__value{
+    font-family: 'Montserrat-Regular';
+    border: none;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    text-transform: uppercase;
+    color: $DarkShade50;
+    height: 15px;
+}
+
+.range-slider__buttom{
+    padding-top: 13px;
+    width: inherit;
+}
+
+@import '../variables/variables.scss';
+@import '__slider/range-slider__slider.scss';

@@ -5,6 +5,7 @@ import './../../../blocks/radio-button/radio-button';
 import './../../../blocks/toggle/toggle';
 import './../../../blocks/like-button/like-button';
 import './../../../blocks/rate-button/rate-button';
+import './../../../blocks/range-slider/range-slider';
 
 
 let dropdownOpen = document.querySelectorAll('.FormElements .dropdown_rooms .dropdown__list');
@@ -62,7 +63,6 @@ if(!likeButtonsChecked){
 let comments = document.querySelectorAll('.comment');
 let commentLikeButtons = comments[0].querySelector('.like-button-input');
 let commentLikeButtonsChecked = comments[0].querySelector('.like-button-input:checked');
-console.log(commentLikeButtonsChecked);
 if(!commentLikeButtonsChecked){
     commentLikeButtons.click();
 }

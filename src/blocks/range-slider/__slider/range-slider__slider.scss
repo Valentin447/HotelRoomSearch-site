@@ -1,0 +1,48 @@
+.range-slider__slider{
+    position: relative;
+    height: 16px;
+    width: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.range-slider__scale{
+    position: absolute;
+    width: inherit;
+    height: 6px;
+    background: #FFFFFF;
+    border: 1px solid $DarkShade25;
+    border-radius: 3px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.range-slider__point{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+.range-slider__interval{
+    position: absolute;
+    left: 75px;
+    width: 85px;
+    height: 6px;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 3px;
+    z-index: 2;
+}
+
+.range-slider__point-stop{
+    left: 160px;
+}
+
+.range-slider__point-start{
+    left: 75px;
+}
+
+@import '../../variables/variables.scss';

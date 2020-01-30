@@ -62,7 +62,7 @@
 .FormElement-column-1{
     display: grid;
     position: absolute;
-    grid-template-rows: 65px 66px 67px 85px 86px 85px 146px 65px 206px 45px 275px 130px;
+    grid-template-rows: 65px 66px 67px 85px 86px 86px 145px 65px 207px 45px 274px 130px;
     grid-template-columns: 320px;
     grid-gap: 19px;
     grid-auto-flow: column;
@@ -72,6 +72,16 @@
     display: grid;
     position: absolute;
     left: 446px;
+    grid-template-rows: 152px 72px 11px 15px 46px 12px 41px 12px 201px 301px 12px 327px 180px;
+    grid-template-columns: 320px;
+    grid-gap: 19px;
+    grid-auto-flow: column;
+}
+
+.FormElement-column-3{
+    display: grid;
+    position: absolute;
+    left: 838px;
     grid-template-rows: 149px 75px 11px 15px 46px 12px 41px 12px 201px 301px 12px 327px 180px;
     grid-template-columns: 320px;
     grid-gap: 19px;
@@ -116,3 +126,4 @@
 @import '../../../blocks/like-button/like-button.scss';
 @import '../../../blocks/rate-button/rate-button.scss';
 @import '../../../blocks/comment/comment.scss';
+@import '../../../blocks/range-slider/range-slider.scss'
