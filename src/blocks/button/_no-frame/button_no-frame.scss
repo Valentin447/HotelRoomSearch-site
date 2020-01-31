@@ -9,4 +9,8 @@
     color: $DarkShade50;
 }
 
+.button_no-frame .button__arrow{
+    display: none;
+}
+
 @import '../../variables/variables.scss';

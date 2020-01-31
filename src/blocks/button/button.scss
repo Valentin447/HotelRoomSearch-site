@@ -6,7 +6,19 @@
     line-height: 15px;
     text-transform: uppercase;
 }
+.button{
+    position: relative;
+}
+.button__arrow{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    top: 10px;
+    right: 10px;
+    color: white;
+}
 
 @import '_empty/button_empty.scss';
 @import '_filled/button_filled.scss';
 @import '_no-frame/button_no-frame.scss';
+@import '_default/button_default.scss';
