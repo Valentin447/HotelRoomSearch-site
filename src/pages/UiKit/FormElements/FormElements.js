@@ -66,3 +66,11 @@ let commentLikeButtonsChecked = comments[0].querySelector('.like-button-input:ch
 if(!commentLikeButtonsChecked){
     commentLikeButtons.click();
 }
+
+// Делаем Buttons как на UiKit по умолчанию
+let buttonFilled = document.querySelectorAll('.FormElement-column-3 .button_filled .button-input');
+buttonFilled[1].classList.add('button-input-hover');
+let buttonEmpty = document.querySelectorAll('.FormElement-column-3 .button_empty .button-frame-gradient');
+buttonEmpty[1].classList.add('button-frame-gradient-hover');
+let buttonNoFrame = document.querySelectorAll('.FormElement-column-3 .button_no-frame .button-input');
+buttonNoFrame[1].classList.add('button-input-hover');

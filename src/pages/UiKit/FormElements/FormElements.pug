@@ -18,6 +18,7 @@ html(lang="ru")
             include ../../../blocks/rate-button/rate-button
             include ../../../blocks/comment/comment
             include ../../../blocks/range-slider/range-slider
+            include ../../../blocks/button/button
             
             span.signature.signatureTextFieldDefault DEFAULT
             span.signature.signatureTextFieldHoverFocus HOVER / FOCUS
@@ -78,3 +79,13 @@ html(lang="ru")
                 
                 .FormElement-column-3
                     +range-slider('Range Slider')
+
+                    +title('Buttons')
+                    .buttons
+                        +button()(class='button_filled')
+                        +button()(class='button_filled')
+                        +button()(class='button_empty')
+                        +button()(class='button_empty')
+                        .buttons-no-frame-position
+                            +button()(class='button_no-frame')
+                            +button()(class='button_no-frame')

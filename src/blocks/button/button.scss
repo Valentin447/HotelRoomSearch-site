@@ -1,0 +1,12 @@
+.button-input{
+    border: none;
+    border-radius: 22px;
+    font-family: 'Montserrat-Bold';
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+@import '_empty/button_empty.scss';
+@import '_filled/button_filled.scss';
+@import '_no-frame/button_no-frame.scss';

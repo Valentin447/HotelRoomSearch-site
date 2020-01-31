@@ -82,7 +82,7 @@
     display: grid;
     position: absolute;
     left: 838px;
-    grid-template-rows: 149px 75px 11px 15px 46px 12px 41px 12px 201px 301px 12px 327px 180px;
+    grid-template-rows: 70px 11px 11px 15px 46px 12px 41px 12px 201px 301px 12px 327px 180px;
     grid-template-columns: 320px;
     grid-gap: 19px;
     grid-auto-flow: column;
@@ -114,6 +114,19 @@
     margin-right: 20px;
 }
 
+.FormElement-column-3 .buttons{
+    display: grid;
+    grid-template-columns: 99px 99px;
+    grid-template-rows: 44px 44px 44px;
+    grid-column-gap : 20px;
+    grid-row-gap : 30px;
+}
+.FormElement-column-3 .buttons-no-frame-position{
+    display: flex;
+    width: 142px;
+    justify-content: space-between;
+}
+
 @import '../../../blocks/text-field/text-field.scss';
 @import '../../../blocks/variables/variables.scss';
 @import '../../../blocks/dropdown/dropdown.scss';
@@ -126,4 +139,5 @@
 @import '../../../blocks/like-button/like-button.scss';
 @import '../../../blocks/rate-button/rate-button.scss';
 @import '../../../blocks/comment/comment.scss';
-@import '../../../blocks/range-slider/range-slider.scss'
+@import '../../../blocks/range-slider/range-slider.scss';
+@import '../../../blocks/button/button.scss';

@@ -1,0 +1,12 @@
+.button_no-frame .button-input{
+    width: auto;
+    height: 15px;
+    background: none;
+    color: $Purple;
+}
+.button_no-frame .button-input-hover,  // TODO костыль для UiKit
+.button_no-frame .button-input:hover{
+    color: $DarkShade50;
+}
+
+@import '../../variables/variables.scss';
