@@ -1,0 +1,11 @@
+.pagination__buttons{
+    display: flex;
+}
+
+.pagination{
+    width: max-content;
+    height: max-content;
+}
+
+@import '__button/pugination__button.scss';
+@import '__text/pagination__text.scss';

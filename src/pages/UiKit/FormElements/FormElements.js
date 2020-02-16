@@ -6,6 +6,7 @@ import './../../../blocks/toggle/toggle';
 import './../../../blocks/like-button/like-button';
 import './../../../blocks/rate-button/rate-button';
 import './../../../blocks/range-slider/range-slider';
+import './../../../blocks/pagination/pagination';
 
 
 let dropdownOpen = document.querySelectorAll('.FormElements .dropdown_rooms .dropdown__list');

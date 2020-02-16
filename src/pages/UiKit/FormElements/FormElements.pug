@@ -19,6 +19,8 @@ html(lang="ru")
             include ../../../blocks/comment/comment
             include ../../../blocks/range-slider/range-slider
             include ../../../blocks/button/button
+            include ../../../blocks/pagination/pagination
+
             
             span.signature.signatureTextFieldDefault DEFAULT
             span.signature.signatureTextFieldHoverFocus HOVER / FOCUS
@@ -90,3 +92,6 @@ html(lang="ru")
                             +button('CLICK ME')(class='button_no-frame')
                             +button('CLICK ME')(class='button_no-frame')
                     +button('перейти к оплате')(class='button_default')
+
+                    +title('pagination')
+                    +pagination()

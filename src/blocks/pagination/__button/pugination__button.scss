@@ -1,0 +1,18 @@
+.pagination__button{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: none;
+    border: none;
+    font-size: 12px;
+    line-height: 15px;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+
+@import '_target/pagination__button_target.scss';
+@import '_number/pagination__button_number.scss';
+@import '_points/pagination__button_points.scss';
+@import '_forward-back/pagination__button_forward-back.scss';
+@import '_hidden/pagination__button_hidden.scss';

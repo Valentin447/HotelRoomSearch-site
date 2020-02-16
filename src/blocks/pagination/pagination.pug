@@ -1,0 +1,17 @@
+include __button/pagination__button
+include __text/pagination__text
+
+mixin pagination()
+    .pagination
+        .pagination__buttons
+            +pagination__button('arrow_back')(class="pagination__button_forward-back")
+            +pagination__button()(class="pagination__button_number")
+            +pagination__button('...')(class="pagination__button_points")
+            +pagination__button()(class="pagination__button_number")
+            +pagination__button()(class="pagination__button_number")
+            +pagination__button()(class="pagination__button_number")
+            +pagination__button('...')(class="pagination__button_points")
+            +pagination__button()(class="pagination__button_number")
+            +pagination__button('arrow_forward')(class="pagination__button_forward-back")
+        +pagination__text()
+            
