@@ -20,6 +20,7 @@ let dropdowns = document.querySelectorAll('.dropdown');
 dropdowns[5].classList.add('dropdown_open');
 dropdowns[6].classList.add('dropdown_open');
 dropdowns[6].querySelector('.dropdown__button-clean-input').classList.add('dropdown__button-clean_hidden');
+dropdowns[7].classList.add('dropdown_open');
 
 // Делаем Expandable Checkbox List как на UiKit по умолчанию
 let expandableCheckboxList = document.querySelectorAll('.expandable-checkbox-list');

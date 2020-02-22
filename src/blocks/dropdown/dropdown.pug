@@ -6,7 +6,6 @@ mixin dropdown(textToggle, textTitle, classModifier, textRow1, textRow2, textRow
             include __toggle/dropdown__toggle
 
             +title(textTitle, "")
-        .dropdown__toggle
-            +dropdown__toggle(textToggle)
+        +dropdown__toggle(textToggle)
         +dropdown__list(textRow1, textRow2, textRow3, counterRow1, counterRow2, counterRow3)
             

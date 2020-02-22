@@ -8,4 +8,9 @@
     padding-left: 15px;
 }
 
+.dropdown__toggle-text{
+    color: $DarkShade75;
+}
+
+@import '../../variables/variables.scss';
 @import '_noRadius/dropdown__toggle_noRadius.scss';
