@@ -82,7 +82,7 @@
     display: grid;
     position: absolute;
     left: 838px;
-    grid-template-rows: 70px 11px 175px 65px 13px 285px 41px 12px 201px 301px 12px 327px 180px;
+    grid-template-rows: 70px 11px 175px 65px 13px 285px 301px 120px 201px 301px 120px 327px 180px;
     grid-template-columns: 320px;
     grid-gap: 19px;
     grid-auto-flow: column;
@@ -142,3 +142,4 @@
 @import '../../../blocks/range-slider/range-slider.scss';
 @import '../../../blocks/button/button.scss';
 @import '../../../blocks/pagination/pagination.scss';
+@import '../../../blocks/bullet-list/bullet-list.scss';

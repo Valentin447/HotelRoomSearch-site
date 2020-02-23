@@ -20,6 +20,7 @@ html(lang="ru")
             include ../../../blocks/range-slider/range-slider
             include ../../../blocks/button/button
             include ../../../blocks/pagination/pagination
+            include ../../../blocks/bullet-list/bullet-list
 
             
             span.signature.signatureTextFieldDefault DEFAULT
@@ -97,4 +98,7 @@ html(lang="ru")
                     +pagination()
 
                     +dropdown('Сколько гостей', 'dropdown','dropdown_guests', 'взрослые', 'дети', 'младенцы','2','1','0')
+                    .FormElement-column-3-bullet-list
+                        +title('bullet list')
+                        +bullet-list('Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00')
 
