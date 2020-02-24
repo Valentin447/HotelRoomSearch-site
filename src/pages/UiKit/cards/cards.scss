@@ -1,0 +1,51 @@
+.cards{
+    background: #E5E5E5;;
+}
+.cardsCenterLayer{
+    //position: absolute;
+    position: relative;
+    width: 1440px;
+    height: 1350px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 9px;
+    background: #F4F4F6;
+}
+
+.cardsLayout{
+    display: flex;
+    //position: absolute;
+    position: relative;
+    top: 151px;
+    left: 141px;
+}
+
+.cards-column-1{
+    display: grid;
+    //position: absolute;
+    position: relative;
+    grid-template-rows: 300px 66px;
+    grid-template-columns: 320px;
+    grid-gap: 19px;
+    grid-auto-flow: column;
+}
+.cards-column-2{
+    display: grid;
+    position: absolute;
+    grid-template-rows: 65px 66px;
+    grid-template-columns: 320px;
+    grid-gap: 19px;
+    grid-auto-flow: column;
+}
+.cards-column-3{
+    display: grid;
+    position: absolute;
+    grid-template-rows: 65px 66px 67px;
+    grid-template-columns: 320px;
+    grid-gap: 19px;
+    grid-auto-flow: column;
+}
+
+@import '../../../blocks/card-search/card-search.scss';
