@@ -10,5 +10,13 @@
     color: $DarkShade25;
     font-size: 14px;
 }
+.field:focus,
+.field:hover{
+    border: 1px solid $DarkShade50;
+}
+.field:focus::placeholder,
+.field:hover::placeholder{
+    color: $DarkShade75;
+}
 
 @import '../variables/variables.scss';

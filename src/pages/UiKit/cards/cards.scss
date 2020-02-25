@@ -2,7 +2,6 @@
     background: #E5E5E5;;
 }
 .cardsCenterLayer{
-    //position: absolute;
     position: relative;
     width: 1440px;
     height: 1350px;
@@ -16,7 +15,6 @@
 
 .cardsLayout{
     display: flex;
-    //position: absolute;
     position: relative;
     top: 151px;
     left: 141px;
@@ -24,9 +22,8 @@
 
 .cards-column-1{
     display: grid;
-    //position: absolute;
     position: relative;
-    grid-template-rows: 300px 66px;
+    grid-template-rows: 395px 66px;
     grid-template-columns: 320px;
     grid-gap: 19px;
     grid-auto-flow: column;
@@ -49,3 +46,4 @@
 }
 
 @import '../../../blocks/card-search/card-search.scss';
+@import '../../../blocks/card-account-registration/card-account-registration.scss';

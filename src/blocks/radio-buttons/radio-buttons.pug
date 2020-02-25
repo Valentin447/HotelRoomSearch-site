@@ -1,9 +1,10 @@
-include ../title/title
 include ../radio-button/radio-button
 
-mixin radio-buttons(textTitle, idRadioButon, ...value)
+mixin radio-buttons(idRadioButon, ...value)
     .radio-buttons
-        +title(textTitle)
         .radio-buttons-list
-            each val in value
-                +radio-button(idRadioButon, val)
+            each val, index in value
+                if(index == 0)
+                    +radio-button(idRadioButon, val)(class!='radio-button_checked')
+                else
+                    +radio-button(idRadioButon, val)
