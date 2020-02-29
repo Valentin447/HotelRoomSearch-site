@@ -22,7 +22,7 @@
 
 .cards-column-1{
     display: grid;
-    position: relative;
+    position: absolute;
     grid-template-rows: 395px 66px;
     grid-template-columns: 320px;
     grid-gap: 19px;
@@ -31,6 +31,7 @@
 .cards-column-2{
     display: grid;
     position: absolute;
+    left:  420px;
     grid-template-rows: 65px 66px;
     grid-template-columns: 320px;
     grid-gap: 19px;
@@ -47,3 +48,4 @@
 
 @import '../../../blocks/card-search/card-search.scss';
 @import '../../../blocks/card-account-registration/card-account-registration.scss';
+@import '../../../blocks/card-reservation-room/card-reservation-room.scss';

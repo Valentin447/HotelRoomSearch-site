@@ -1,0 +1,170 @@
+.card-reservation-room {
+    width: 378px;
+    height: 509px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.card-reservation-room-layout {
+    display: grid;
+    position: absolute;
+    grid-template-rows: 32px 65px 63px 15px 17px 49px 23px 35px;
+    grid-template-columns: 319px;
+    grid-gap: 19px;
+    grid-auto-flow: column;
+    top: 39px;
+    left: 30px;
+    width: 320px;
+}
+
+.card-reservation-room-info-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-reservation-room-info-top-number-first{
+    font-family: 'Quicksand-Bold';
+    font-size: 14px;
+    line-height: 17px;
+    color: #1F2041;
+}
+
+.card-reservation-room-info-top-number-last{
+    font-family: 'Quicksand-Bold';
+    font-size: 24px;
+    line-height: 30px;
+    color: #1F2041;
+}
+
+.card-reservation-room-info-top-text{
+    margin-left: 5px;
+    font-family: 'Montserrat-Bold';
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #BC9CFF;
+}
+
+.card-reservation-room-info-top-price-number{
+    font-family: 'Montserrat-Bold';
+    font-size: 14px;
+    line-height: 18px;
+    color: $DarkShade50;
+}
+
+.card-reservation-room-info-top-price-text{
+    font-family: 'Montserrat-Regular';
+    font-size: 12px;
+    line-height: 18px;
+    color: $DarkShade50;
+}
+
+.card-reservation-room-info-top-price{
+    margin-top: 10px;
+}
+
+.card-reservation-room-date{
+    display: flex;
+}
+.card-reservation-room-start{
+    margin-right: 20px;
+}
+
+.card-reservation-room-sum{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat-Regular';
+    color: $DarkShade75;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.card-reservation-room-discount{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat-Regular';
+    font-size: 14px;
+    line-height: 24px;
+    color: $DarkShade75;
+    margin-left: 1px;
+}
+
+.card-reservation-room-discount-left{
+    display: flex;
+}
+
+.card-reservation-room-discount-left-help{
+    text-align: center;
+    vertical-align: middle;
+    height: 18px;
+    width: 18px;
+    color: $DarkShade25;
+    border: 1px solid $DarkShade25;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: 'Montserrat-Bold';
+    margin-left: 5px;
+}
+
+.card-reservation-room-additional-services{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat-Regular';
+    font-size: 14px;
+    line-height: 18px;
+    color: $DarkShade75;
+    margin-left: 1px;
+}
+
+.card-reservation-room-additional-services-left{
+    display: flex;
+}
+
+.card-reservation-room-additional-services-left-text{
+    width: 214px;
+}
+
+.card-reservation-room-additional-services-left-help{
+    text-align: center;
+    vertical-align: middle;
+    height: 18px;
+    width: 18px;
+    color: $DarkShade25;
+    border: 1px solid $DarkShade25;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: 'Montserrat-Bold';
+    margin-left: 5px;
+}
+
+.card-reservation-room-total{
+    display: flex;
+    justify-content: space-between;
+    height: 17px;
+}
+
+.card-reservation-room-total-points{
+    border-bottom: 1px dotted $DarkShade25;
+    flex-grow: 1;
+    margin: 0 5px 0 5px;
+}
+
+.card-reservation-room-total-text{
+    font-family: 'OpenSans-Bold';
+    font-size: 19px;
+    line-height: 20px;
+}
+
+.card-reservation-room-total-number{
+    font-family: 'Quicksand-Regular';
+    font-size: 19px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+
+
+@import '../../blocks/variables/variables.scss';
