@@ -1,0 +1,15 @@
+include ../button/button
+include ../text-field/text-field
+
+.card-entry
+    .card-entry-layout
+        p.card-entry-title= 'Войти'
+        .card-entry-email
+            +textField('Email')
+        .card-entry-password
+            +textField('Пароль')
+        .card-entry-button
+            +button('войти')(class='button_default')
+        .card-entry-create
+            p.card-entry-create-text= 'Нет аккаунта на Toxin?'
+            +button('создать')(class='button_empty')

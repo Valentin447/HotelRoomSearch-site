@@ -1,7 +1,7 @@
 .cards{
     background: #E5E5E5;;
 }
-.cardsCenterLayer{
+.cards-center-layer{
     position: relative;
     width: 1440px;
     height: 1350px;
@@ -13,7 +13,7 @@
     background: #F4F4F6;
 }
 
-.cardsLayout{
+.cards-layout{
     display: flex;
     position: relative;
     top: 151px;
@@ -24,7 +24,7 @@
     display: grid;
     position: absolute;
     grid-template-rows: 395px 66px;
-    grid-template-columns: 320px;
+    grid-template-columns: 380px;
     grid-gap: 19px;
     grid-auto-flow: column;
 }
@@ -32,8 +32,8 @@
     display: grid;
     position: absolute;
     left:  420px;
-    grid-template-rows: 65px 66px;
-    grid-template-columns: 320px;
+    grid-template-rows: 532px 66px;
+    grid-template-columns: 380px;
     grid-gap: 19px;
     grid-auto-flow: column;
 }
@@ -41,7 +41,7 @@
     display: grid;
     position: absolute;
     grid-template-rows: 65px 66px 67px;
-    grid-template-columns: 320px;
+    grid-template-columns: 380px;
     grid-gap: 19px;
     grid-auto-flow: column;
 }
@@ -49,3 +49,4 @@
 @import '../../../blocks/card-search/card-search.scss';
 @import '../../../blocks/card-account-registration/card-account-registration.scss';
 @import '../../../blocks/card-reservation-room/card-reservation-room.scss';
+@import '../../../blocks/card-entry/card-entry.scss';
