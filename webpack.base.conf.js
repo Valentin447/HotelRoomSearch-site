@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -108,7 +109,11 @@ module.exports = {
         new CopyWebpackPlugin([
           {from:`${PATHS.src}/static/fonts/`, to:`${PATHS.assets}/fonts/`},
           {from:`${PATHS.src}/static/img/`, to:`${PATHS.assets}/img/`}
-        ])
+        ]),
+        new webpack.ProvidePlugin({
+          $: 'jquery',
+          jQuery: 'jquery',
+          'window.jQuery': 'jquery'
+        }),
     ],
-
 };
