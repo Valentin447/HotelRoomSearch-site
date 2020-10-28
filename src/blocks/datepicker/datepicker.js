@@ -1,5 +1,4 @@
 ;
-console.log('11');
 (function (window, $, undefined) { ;(function () {
     var VERSION = '2.2.3',
         pluginName = 'datepicker',

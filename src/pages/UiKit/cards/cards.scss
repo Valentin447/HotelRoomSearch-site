@@ -41,7 +41,7 @@
     display: grid;
     position: absolute;
     left: 840px;
-    grid-template-rows: 65px 66px 67px;
+    grid-template-rows: 389px 278px 67px;
     grid-template-columns: 380px;
     grid-gap: 19px;
     grid-auto-flow: column;
@@ -51,3 +51,4 @@
 @import '../../../blocks/card-account-registration/card-account-registration.scss';
 @import '../../../blocks/card-reservation-room/card-reservation-room.scss';
 @import '../../../blocks/card-entry/card-entry.scss';
+@import '../../../blocks/room-card/room-card.scss';

@@ -1,0 +1,7 @@
+include __slider/room-card__slider
+include __info/room-card__info
+
+mixin room-card(numberRoom, price, quantityReviews, rating, lux)
+    .room-card
+        +slider(numberRoom)
+        +info(numberRoom, price, quantityReviews, rating, lux)

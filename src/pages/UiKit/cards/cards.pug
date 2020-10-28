@@ -1,3 +1,5 @@
+include ../../../blocks/room-card/room-card
+
 html(lang="ru")
     head
         title= 'cards'
@@ -13,3 +15,5 @@ html(lang="ru")
                     include ../../../blocks/card-entry/card-entry
                 .cards-column-3
                     include ../../../blocks/datepicker/datepicker
+                    +room-card(888, '9 990', 145, 5, 'люкс')
+                    +room-card(840, '9 900', 65, 4, '')

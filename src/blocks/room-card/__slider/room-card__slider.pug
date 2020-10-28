@@ -1,0 +1,18 @@
+mixin slider(numberRoom)
+    div(class='room-card__slider')
+        .room-card__slides
+            each slideNumber in [1, 2, 3, 4]
+                - var imgPath = '../assets/img/room-card/'+numberRoom+'/'+numberRoom+'-'+slideNumber+'.png'
+                img(class='room-card__slides-item room-card__slides-item-'+slideNumber, src=imgPath,alt='')        
+        .room-card__dots
+            each i in [1, 2, 3, 4]
+                if i==1
+                    div(class='room-card__dots-item room-card__dots-item-1 room-card__dots-item_current')
+                else
+                    div(class='room-card__dots-item room-card__dots-item-'+i)
+        .room-card__left-button
+            div(class='room-card__left-arrow material-icons')= 'expand_more'
+        .room-card__right-button
+            div(class='room-card__right-arrow material-icons')= 'expand_more'
+
+

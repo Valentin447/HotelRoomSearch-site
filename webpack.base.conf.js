@@ -34,7 +34,7 @@ module.exports = {
             test: /\.(png|jpg|gif|svg)$/,
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]'
+              name: '[path][name].[ext]'
             }
           },
           {
@@ -108,7 +108,8 @@ module.exports = {
         }),
         new CopyWebpackPlugin([
           {from:`${PATHS.src}/static/fonts/`, to:`${PATHS.assets}/fonts/`},
-          {from:`${PATHS.src}/static/img/`, to:`${PATHS.assets}/img/`}
+          {from:`${PATHS.src}/static/img/`, to:`${PATHS.assets}/img/`},
+          {from:`${PATHS.src}/blocks/room-card/room-card-img/`, to:`${PATHS.assets}/img/room-card/`},
         ]),
         new webpack.ProvidePlugin({
           $: 'jquery',

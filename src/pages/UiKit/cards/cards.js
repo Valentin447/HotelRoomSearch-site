@@ -1,0 +1,1 @@
+import './../../../blocks/room-card/__slider/room-card__slider';
