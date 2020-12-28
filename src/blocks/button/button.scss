@@ -5,9 +5,11 @@
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
+    height: 100%;
 }
 .button{
     position: relative;
+    height: 100%;
 }
 .button__arrow{
     position: absolute;
@@ -17,6 +19,11 @@
     right: 10px;
     color: white;
 }
+
+.button-frame-gradient{
+    height: 100%;
+}
+
 
 @import '_empty/button_empty.scss';
 @import '_filled/button_filled.scss';

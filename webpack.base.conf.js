@@ -102,6 +102,12 @@ module.exports = {
           inject: 'body',
           hash: false
         }),
+        new HtmlWebpackPlugin({
+          template: `${PATHS.src}/pages/UiKit/HeadersFooters/HeadersFooters.pug`,
+          filename: './UiKit/HeadersFooters.html',
+          inject: 'body',
+          hash: false
+        }),
 
         new MiniCssExtractPlugin({
             filename: `${PATHS.assets}/css/[name].css`,
