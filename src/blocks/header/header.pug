@@ -1,0 +1,13 @@
+include ../button/button
+
+mixin header(classModifier, firstName, lastName)
+    .header(class!=classModifier)
+        .header-left
+            include ../logo-toxin/logo-toxin
+        .header-right
+            include ../menu/menu
+            .header-buttons
+                +button('Войти')(class='button_empty')
+                +button('Зарегистрироваться')(class='button_filled')
+            .header-user
+                text=(firstName + ' ' + lastName)

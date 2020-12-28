@@ -1,0 +1,12 @@
+.menu__item{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.menu__item-arrow{
+    display: none;
+}
+
+@import "_list/menu__item_list.scss";
+@import "_bold/menu__item_bold.scss";

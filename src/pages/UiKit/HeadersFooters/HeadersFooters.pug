@@ -1,0 +1,15 @@
+doctype html
+html(lang="ru")
+    head
+        title= 'Headers & Footers'
+    body.HeadersFooters
+        .HeadersFootersCenterLayer
+            include ../../../blocks/header/header
+
+            include ../../../blocks/gray-logo/gray-logo
+            .HeadersFooters-grid
+                +header()
+                +header('header_logined', 'Юлий', 'Цезарь')
+                
+
+

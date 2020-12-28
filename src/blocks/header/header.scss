@@ -1,0 +1,33 @@
+.header{
+    display: flex;
+    height: 70px;
+    background: #FFFFFF;
+    padding: 0 9.7% 0 9.8%;
+    align-items: center;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'Montserrat-Regular';
+    color: $DarkShade50;
+}
+
+.header-buttons{
+    display: flex;
+    height: 50%;
+    justify-content: space-between;
+    width: 303px;
+}
+
+.header-right{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.header .header-user{
+    display: none;
+}
+
+@import '../logo-toxin/logo-toxin.scss';
+@import '_logined/header_logined.scss';
