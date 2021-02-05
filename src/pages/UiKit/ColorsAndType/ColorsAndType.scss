@@ -30,5 +30,9 @@ position: absolute;
     top: 145px;
 }
 
+.fonts-used .fonts-used__sample_font-Body{
+    line-height: 24px;
+}
+
 @import '../../../blocks/colors-used/colors-used.scss';
 @import '../../../blocks/fonts-used/fonts-used.scss';

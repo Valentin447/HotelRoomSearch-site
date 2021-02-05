@@ -4,12 +4,15 @@ html(lang="ru")
         title= 'Headers & Footers'
     body.HeadersFooters
         .HeadersFootersCenterLayer
+            include ../../../blocks/gray-logo/gray-logo
+
             include ../../../blocks/header/header
 
-            include ../../../blocks/gray-logo/gray-logo
             .HeadersFooters-grid
                 +header()
                 +header('header_logined', 'Юлий', 'Цезарь')
+                include ../../../blocks/footer/footer
+            
                 
 
 

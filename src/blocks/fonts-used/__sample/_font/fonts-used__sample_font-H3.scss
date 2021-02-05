@@ -2,9 +2,12 @@
     font-size: 12px;
     font-family: 'Montserrat-Bold';
     text-transform: uppercase;
+    color: $DarkShade100;
 }
 
 .fonts-used__sample_tag-H3{
     font-size: 12px;
     line-height: 15px;
 }
+
+@import "../../../variables/variables.scss";

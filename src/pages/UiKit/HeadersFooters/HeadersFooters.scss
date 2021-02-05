@@ -24,10 +24,11 @@
     width: 100%;
     display: grid;
     position: absolute;
-    grid-template-rows: 110px 100px 100px;
+    grid-template-rows: 110px 110px 500px 400px;
     grid-auto-flow: column;
     margin-top: 140px;
 }
 
 @import '../../../blocks/header/header.scss';
 @import '../../../blocks/menu/menu.scss';
+@import '../../../blocks/footer/footer.scss';
