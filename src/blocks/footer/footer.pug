@@ -1,52 +1,5 @@
 include ../subscription/subscription
 
-.footer
-    .footer-top
-        .footer-top__hotel-opinions
-            include ../logo-toxin/logo-toxin
-            p.footer-top__hotel-opinions-text="Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»"
-        .footer-top__lists
-            .footer-top__navigation
-                h3.footer-top__navigation-heading.fonts-used__sample_font-H3= "НАВИГАЦИЯ"
-                ul.footer-top__navigation-list
-                    li
-                        a.fonts-used__sample_font-Body(href='//') О нас
-                    li
-                        a.fonts-used__sample_font-Body(href='//') Новости
-                    li
-                        a.fonts-used__sample_font-Body(href='//') Служба поддержки
-                    li
-                        a.fonts-used__sample_font-Body(href='//') Услуги
-            .footer-top__about-us
-                h3.footer-top__about-us-heading.fonts-used__sample_font-H3= "О НАС"
-                ul.footer-top__about-us-list
-                    li
-                        a.fonts-used__sample_font-Body(href='//') О сервисе
-                    li
-                        a.fonts-used__sample_font-Body(href='//') Наша команда
-                    li
-                        a.fonts-used__sample_font-Body(href='//') Вакансии
-                    li
-                        a.fonts-used__sample_font-Body(href='//') Инвесторы
-            .footer-top__support
-                h3.footer-top__support-heading.fonts-used__sample_font-H3= "СЛУЖБА ПОДДЕРЖКИ"
-                ul.footer-top__support-list
-                    li
-                        a.fonts-used__sample_font-Body(href='//') Соглашения
-                    li
-                        a.fonts-used__sample_font-Body(href='//') Сообщества
-                    li
-                        a.fonts-used__sample_font-Body(href='//') Связь с нами
-        .footer-top__subscription 
-            h3.footer-top__subscription-heading.fonts-used__sample_font-H3= "ПОДПИСКА"
-            p.fonts-used__sample_font-Body='Получайте специальные предложения и новости сервиса'
-            +subscription('')
-    .footer__bottom
-        p.footer__bottom-copyright.fonts-used__sample_font-Body='Copyright © 2018 Toxin отель. Все права зачищены.'
-        .footer__bottom-social-networks
-            a(href='https://twitter.com/?lang=ru')
-                img(src='../assets/img/twitter.svg' alt='twitter')
-            a(href='https://ru-ru.facebook.com/')
-                img(src='../assets/img/facebook.svg' alt='facebook')
-            a(href='https://www.instagram.com/?hl=ru')
-                img(src='../assets/img/instagram.svg' alt='instagram')
+footer.footer
+    include ../footer-top/footer-top.pug
+    include ../footer-bottom/footer-bottom.pug

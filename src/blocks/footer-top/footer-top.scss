@@ -1,0 +1,24 @@
+.footer-top{
+    
+    padding: 104px 0px 100px 0px;
+    background: #FFFFFF;
+    display: flex;
+    height: min-content;
+    //align-items: center;
+    //min-height: 442px;
+    width: 100%;
+    max-width: 1161px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    @media (max-width: 1400px) {
+        padding: 7% 0px 7% 0px;
+    }
+    @media (max-width: 1270px) {
+        max-width: 90%;
+    }
+}
+
+@import "__hotel-opinions/footer-top__hotel-opinions.scss";
+@import "__lists/footer-top__lists.scss";
+@import "__subscription/footer-top__subscription.scss";
