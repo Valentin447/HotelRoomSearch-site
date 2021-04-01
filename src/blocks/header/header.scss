@@ -2,14 +2,48 @@
     display: flex;
     height: 70px;
     background: #FFFFFF;
-    padding: 0 9.7% 0 9.8%;
+    padding: 0 15px 0 15px;
     align-items: center;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-    justify-content: space-between;
+    justify-content: center; 
     font-size: 14px;
     line-height: 17px;
     font-family: 'Montserrat-Regular';
     color: $DarkShade50;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+        height: 140px;
+    }
+}
+
+.header::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    @media (max-width: 600px) {
+        border-top: $DarkShade10 1px solid;
+    }  
+}
+
+.header-container{
+    display: flex;
+    width: 100%;
+    max-width: 1161px;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+        //justify-content: center;
+    }
+}
+
+.header-left{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
 }
 
 .header-buttons{
@@ -23,6 +57,8 @@
     display: flex;
     height: 100%;
     align-items: center;
+    height: 70px;
+    justify-content: center;
 }
 
 .header .header-user{
@@ -31,3 +67,4 @@
 
 @import '../logo-toxin/logo-toxin.scss';
 @import '_logined/header_logined.scss';
+@import '../variables/variables.scss';

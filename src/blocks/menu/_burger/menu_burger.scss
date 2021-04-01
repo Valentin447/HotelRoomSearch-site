@@ -1,0 +1,49 @@
+.menu_burger{
+    display: none;
+
+    @media (max-width: 1024px) {
+        display: block;
+        position: relative;
+        height: 20px;
+        width: 30px;
+        left: 100px;
+    }
+}
+.menu_burger span{
+    background-color: $Purple;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 9px;
+}
+.menu_burger::before,
+.menu_burger::after{
+    content: '';
+    background-color: $Purple;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    transition: 0.3s;
+}
+.menu_burger::before{
+    top: 0;
+}
+.menu_burger::after{
+    bottom: 0;
+}
+
+.menu-list_activ .menu_burger::before{
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+.menu-list_activ .menu_burger::after{
+    transform: rotate(-45deg);
+    bottom: 9px;
+}
+
+.menu-list_activ .menu_burger span{
+    display: none;
+}
+
+@import "../../variables/variables.scss";

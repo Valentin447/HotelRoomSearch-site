@@ -1,6 +1,35 @@
 .menu{
+    height: 50px;
+    width: auto;
+    @media (max-width: 1024px) {
+        height: 20px;
+        width: 150px;
+    }
+}
+
+.menu-list{
     display: flex;
     flex-direction: row;
+    padding: 10px;
+    
+    @media (max-width: 1024px) {
+        display: none;
+        position: relative;
+        flex-direction: column;
+        background-color: white;
+        right: 20px;
+        top: -100%;
+    }
+
+}
+
+.menu-list_activ .menu-list{
+    display: flex;
+    top: 20px;
+    @media (max-width: 600px){
+        top: 70px;
+    }
 }
 
 @import "__item/menu__item.scss";
+@import "_burger/menu_burger.scss";
