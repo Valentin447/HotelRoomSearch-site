@@ -1,0 +1,63 @@
+.landing-page__uiKit{
+    position: absolute;
+    background-color: white;
+}
+
+.landing-page__img-container{
+    position: relative;
+    border: blue 5px solid;
+    height: max-content;
+}
+
+.landing-page__img{
+    width: 100%;
+    height: 100%;
+    @media (max-width: 960px){
+        height: 600px;
+        width: 960px;
+    }
+}
+
+.landing-page__slogan-container{
+    position: absolute;
+    width: 297px;
+    height: 48px;
+    right: 130px;
+    bottom: 25px;
+
+    @media (max-width: 490px) {
+        right: 20px;
+    }
+}
+
+.landing-page__header{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+.landing-page__card-search-container{
+    position: absolute;
+    max-width: 1161px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: blue 5px solid;
+    top: 0; left: 0; bottom: 0; right: 0;
+
+    @media (max-width: 1191px) {
+        padding-left: 10px;
+    }
+}
+
+.landing-page__card-search{
+    position: relative;
+    left: 0;
+    top: 140px;
+    @media (max-width: 600px) {
+        top: 155px;
+    }
+}
+
+@import '../../blocks/slogan/slogan.scss';

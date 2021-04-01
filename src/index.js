@@ -4,4 +4,5 @@ import './scss/utils/fonts.scss';
 import './pages/UiKit/FormElements/FormElements';
 import './pages/UiKit/cards/cards';
 import './blocks/datepicker/datepicker.js';
+import './pages/index/landing-page';
 
