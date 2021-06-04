@@ -7,5 +7,9 @@ mixin dropdown(textToggle, textTitle, classModifier, textRow1, textRow2, textRow
 
             +title(textTitle, "")
         +dropdown__toggle(textToggle)
-        +dropdown__list(textRow1, textRow2, textRow3, counterRow1, counterRow2, counterRow3)
+        if textRow1
+            +dropdown__list(textRow1, textRow2, textRow3, counterRow1, counterRow2, counterRow3)
+        else if classModifier == 'dropdown_date'
+            .dropdown__datepicker
+                include ../datepicker/datepicker
             

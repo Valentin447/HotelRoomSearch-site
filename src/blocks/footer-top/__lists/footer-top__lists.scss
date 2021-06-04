@@ -1,6 +1,6 @@
 .footer-top__lists{
     display: flex;  
-    //padding-top: 5px;
+    padding-top: 4px;
     padding-left: 40px;
     margin: 0px 0px 20px 0px;
     @media (max-width: 999px) {
@@ -16,14 +16,16 @@
     padding-bottom: 20px;
 }
 
+.footer-top__lists h3{
+    height: 33px;
+}
+
 .footer-top__lists ul{
     list-style: none;  
 }
 
 .footer-top__lists ul li{
     height: 38px;
-    display: flex;
-    align-items: flex-end;
 }
 
 .footer-top__lists a{

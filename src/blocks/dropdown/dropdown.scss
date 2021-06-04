@@ -2,14 +2,26 @@
     display: flex; 
     flex-direction: column;
     position: relative;
-    width: 320px;
-}
-.dropdown div{  
-    display: flex;
-    font-family: "Montserrat-Regular";
+    width: 100%;
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
-    vertical-align: middle;
+    line-height: 18px;
+}
+
+.dropdown__datepicker{
+    position: absolute;
+    top: 70px;
+    z-index: 2;
+}
+
+.dropdown .dropdown__datepicker{
+    display: none;
+}
+
+.dropdown_open .dropdown__datepicker{
+    display: flex;
 }
 
 @import '../title/title.scss';
@@ -26,3 +38,4 @@
 @import '_guests/dropdown_guests.scss';
 @import '__button-enter/dropdown__button-enter.scss';
 @import '__button-clean/dropdown__button-clean.scss';
+@import '__counter/dropdown__counter.scss';

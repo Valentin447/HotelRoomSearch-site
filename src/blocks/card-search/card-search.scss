@@ -1,20 +1,18 @@
 .card-search{
-    width: 377px;
-    height: 371px;
+    max-width: 320px;
+    min-height: 304px;
     background: #FFFFFF;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-}
-
-.card-search-layout{
-    width: 320px;
-    height: 30px;
-    margin-top: 39px;
-    margin-left: 29px;
+    padding: 40px 30px 30px 30px;
+    @media (max-width: 410px) {
+        width: 77%;
+        margin-right: 10px;
+    }
 }
 
 .card-search-title{
-    width: 320px;
+    width: 100%;
     font-family: 'OpenSans-Bold';
     font-size: 24px;
     line-height: 30px;
@@ -23,6 +21,7 @@
 .card-search-date{
     display: flex;
     margin-top: 21px;
+    flex-wrap: wrap;
 }
 
 .card-search-date-start{
@@ -35,6 +34,16 @@
 
 .card-search-button{
     margin-top: 31px;
+    height: 44px;
 }
 
+// .dropdown__datepicker{
+//     display: none;
+//     position: absolute;
+//     top: 190px;
+//     z-index: 2;
+// }
+.dropdown_open .card-search__datepicker{
+    display: block;
+}
 @import '../button/button.scss';

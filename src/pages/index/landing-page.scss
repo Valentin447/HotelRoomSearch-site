@@ -3,60 +3,44 @@
     background-color: white;
 }
 
-.landing-page__img-container{
-    position: relative;
-    border: blue 5px solid;
-    height: max-content;
-}
-
 .landing-page__img{
     width: 100%;
-    height: 100%;
+    height: 62.5vw;
+    background: url(../img/background-landing-page.jpg);
+    background-size: 100% 100%;
+    background-position: left;
+    display: flex;
+    flex-flow: row-reverse wrap-reverse;
+    //padding: 0 100px 100px 0;
     @media (max-width: 960px){
         height: 600px;
-        width: 960px;
+        width: 100vw;
+        background-size: auto 600px;
     }
-}
-
-.landing-page__slogan-container{
-    position: absolute;
-    width: 297px;
-    height: 48px;
-    right: 130px;
-    bottom: 25px;
-
-    @media (max-width: 490px) {
-        right: 20px;
+    @media (max-width: 410px){
+        height: 690px;
+        width: 100%;
+        background-size: auto 690px;
     }
-}
-
-.landing-page__header{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
 }
 
 .landing-page__card-search-container{
     position: absolute;
     max-width: 1161px;
-    width: 100%;
-    height: 100%;
+    height: auto;
     margin: auto;
-    border: blue 5px solid;
     top: 0; left: 0; bottom: 0; right: 0;
-
-    @media (max-width: 1191px) {
-        padding-left: 10px;
-    }
 }
 
 .landing-page__card-search{
-    position: relative;
+    position: absolute;
     left: 0;
     top: 140px;
     @media (max-width: 600px) {
         top: 155px;
+    }
+    @media (max-width: 1190px) {
+        left: 10px;
     }
 }
 

@@ -1,9 +1,9 @@
-.button_default .button-input{
-    width: 320px;
+.button_default .button__input{
+    width: 100%;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     color: white;
 }
 
-.button_default .button-input:hover{
+.button_default .button__input:hover{
     opacity: 0.5;
 }

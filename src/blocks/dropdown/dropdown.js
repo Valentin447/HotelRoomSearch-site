@@ -5,13 +5,15 @@ for (let dropdown of dropdowns) {
     dropdownToggle.onclick = function () {
         dropdown.classList.toggle('dropdown_open');
     }
-    buttonClean.onclick = function () {
-        let counterValues = dropdown.querySelectorAll('.dropdown__counter-value-number');
-        for (let counterValue of counterValues) {
-            counterValue.setAttribute('value', 0);
-            counterValue.value = 0;
+    if(buttonClean !== null){
+        buttonClean.onclick = function () {
+            let counterValues = dropdown.querySelectorAll('.dropdown__counter-value-number');
+            for (let counterValue of counterValues) {
+                counterValue.setAttribute('value', 0);
+                counterValue.value = 0;
+            }
+            CheckValue(true);
         }
-        CheckValue(true);
     }
 }
 
