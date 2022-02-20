@@ -1,0 +1,14 @@
+include ../../blocks/header/header
+include ../../blocks/filter/filter
+
+
+doctype html
+html(lang="ru")
+    head
+        title= 'Search room'
+        meta(name="viewport", content="width=device-width")
+    body 
+        +header() 
+        .search-room-container 
+            +filter()
+            include ../../blocks/found-rooms/found-rooms

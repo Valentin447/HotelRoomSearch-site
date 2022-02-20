@@ -85,6 +85,12 @@ module.exports = {
             hash: false
         }),
         new HtmlWebpackPlugin({
+          template: `${PATHS.src}/pages/SearchRoom/SearchRoom.pug`,
+          filename: './SearchRoom.html',
+          inject: 'body',
+          hash: false
+        }),
+        new HtmlWebpackPlugin({
           template: `${PATHS.src}/pages/UiKit/ColorsAndType/ColorsAndType.pug`,
           filename: './UiKit/ColorsAndType.html',
           inject: 'body',
