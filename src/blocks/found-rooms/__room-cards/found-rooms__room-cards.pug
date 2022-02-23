@@ -15,5 +15,6 @@
 include ../../room-card/room-card.pug
 .found-rooms__room-cards
   each room in rooms
-    +room-card(room.numberRoom, room.price, room.quantityReviews, room.rating, room.lux)
+    .found-rooms__room-card-container
+      +room-card(room.numberRoom, room.price, room.quantityReviews, room.rating, room.lux)
       

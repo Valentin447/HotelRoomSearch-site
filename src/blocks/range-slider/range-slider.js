@@ -42,7 +42,6 @@ function mouseMove(mousemoveEvent){
 function addSpace(number){
     let thousands = Math.round(number / 1000);
     let hundreds = Math.round(number) % 1000;
-    console.log(thousands);
     if(thousands === 0){
         return hundreds;
     }

@@ -1,5 +1,5 @@
-include ../title/title
-
+include ../pagination/pagination.pug
 .found-rooms
-    +title("Номера, которые мы для вас подобрал")
+    p(class='found-rooms__title')='Номера, которые мы для вас подобрали'
     include __room-cards/found-rooms__room-cards.pug
+    +pagination()
