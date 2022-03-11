@@ -1,6 +1,24 @@
 .room-card__slider{
     width: 100%;
     position: relative;
+    .room-card__slider-shadow-left{
+        position: absolute;
+        display: none;
+        width: 42px;
+        height: 151px;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+        z-index: 3;
+    }
+    .room-card__slider-shadow-right{
+        position: absolute;
+        display: none;
+        width: 42px;
+        height: 151px;
+        right: 0px;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        z-index: 3;
+    }
 }
 
 .room-card__left-button, .room-card__right-button{

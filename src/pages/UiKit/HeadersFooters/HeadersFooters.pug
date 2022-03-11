@@ -8,10 +8,13 @@ html(lang="ru")
 
             include ../../../blocks/header/header
 
-            .HeadersFooters-grid
+            .HeadersFooters-item1
                 +header()
+            .HeadersFooters-item2
                 +header('header_logined', 'Юлий', 'Цезарь')
+            .HeadersFooters-item3
                 include ../../../blocks/footer/footer
+            .HeadersFooters-item4
                 .footer-creative-box
                     include ../../../blocks/footer-creative/footer-creative
             

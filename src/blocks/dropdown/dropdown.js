@@ -1,3 +1,4 @@
+
 let dropdowns = document.querySelectorAll('.dropdown');
 for (let dropdown of dropdowns) {
     let dropdownToggle = dropdown.querySelector('.dropdown__toggle');
@@ -92,6 +93,9 @@ function allGuests(clean) {
             for (let counterGuests of countersGuests) {
                 counterGuests.setAttribute('value', 0);
                 counterGuests.value = 0;
+
+               // console.log(counterGuests.value);
+
             }
         } else {
             for (let counterGuests of countersGuests) {

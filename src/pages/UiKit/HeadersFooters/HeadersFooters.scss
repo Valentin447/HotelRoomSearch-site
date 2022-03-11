@@ -20,15 +20,34 @@
     position: absolute;
     }
 
-.HeadersFooters-grid{
-    width: 100%;
-    display: grid;
-    position: absolute;
-    grid-template-rows: 110px 110px 483px 400px;
-    grid-auto-flow: column;
-    margin-top: 140px;
+// .HeadersFooters-grid{
+//     width: 100%;
+//     display: grid;
+//     position: absolute;
+//     grid-template-rows: 110px 110px 483px 400px;
+//     grid-auto-flow: column;
+//     margin-top: 140px;
+// }
+.HeadersFooters-item1{
+    position: relative;
+    left: 0;
+    top: 140px;
 }
 
+.HeadersFooters-item2{
+    position: relative;
+    top: 250px;
+}
+
+.HeadersFooters-item3{
+    position: relative;
+    top: 360px;
+}
+
+.HeadersFooters-item4{
+    position: relative;
+    top: 400px;
+}
 .footer-creative-box{
     display: flex;
     justify-content: center;

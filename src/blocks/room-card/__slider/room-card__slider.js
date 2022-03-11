@@ -9,6 +9,8 @@ class Sim{
         this.sldrElemFirst = this.sldrList.querySelector('.room-card__slides-item');
         this.leftArrow = this.sldrRoot.querySelector('.room-card__left-button');
         this.rightArrow = this.sldrRoot.querySelector('.room-card__right-button');
+        this.leftShadow = this.sldrRoot.querySelector('.room-card__slider-shadow-left');
+        this.rightShadow = this.sldrRoot.querySelector('.room-card__slider-shadow-right');
         this.indicatorDots = this.sldrRoot.querySelector('.room-card__dots');
         this.defaults = {
             loop: true,     // Бесконечное зацикливание слайдера
@@ -104,14 +106,17 @@ function start(){
         let slid = new Sim(sldrRoot);
         slid.initialize();
         initializeDots(slid);
-        slid.sldrRoot.addEventListener('mouseover', function() {
-            
+        slid.sldrRoot.addEventListener('mouseover', function() {           
             slid.leftArrow.style.display = 'flex';
             slid.rightArrow.style.display = 'flex';
+            slid.leftShadow.style.display = 'block';
+            slid.rightShadow.style.display = 'block';
         });
         slid.sldrRoot.addEventListener('mouseout', function() {
             slid.leftArrow.style.display = 'none';
             slid.rightArrow.style.display = 'none';
+            slid.leftShadow.style.display = 'none';
+            slid.rightShadow.style.display = 'none';
         });
         slid.leftArrow.addEventListener('click', function () {
             let fnTime = getTime();

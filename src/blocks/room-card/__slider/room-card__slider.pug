@@ -1,5 +1,7 @@
 mixin slider(numberRoom)
     div(class='room-card__slider')
+        .room-card__slider-shadow-left
+        .room-card__slider-shadow-right
         .room-card__slides
             each slideNumber in [1, 2, 3, 4]
                 - var imgPath = '../assets/img/room-card/'+numberRoom+'/'+numberRoom+'-'+slideNumber+'.png'
