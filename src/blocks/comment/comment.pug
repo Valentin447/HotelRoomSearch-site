@@ -1,8 +1,8 @@
 include ../like-button/like-button
 
-mixin comment(name, date, likeButtonCounter, text)
+mixin comment(name, date, likeButtonCounter, text, userNumber)
     .comment    
-        .comment__foto
+        .comment__foto(style='background-image: url(../assets/img/avatars/user-'+userNumber+'.png);')
         p.comment__name=name
         p.comment__date=date
         +like-button(likeButtonCounter)
