@@ -91,6 +91,12 @@ module.exports = {
           hash: false
         }),
         new HtmlWebpackPlugin({
+          template: `${PATHS.src}/pages/RoomDetails/RoomDetails.pug`,
+          filename: './RoomDetails.html',
+          inject: 'body',
+          hash: false
+        }),
+        new HtmlWebpackPlugin({
           template: `${PATHS.src}/pages/UiKit/ColorsAndType/ColorsAndType.pug`,
           filename: './UiKit/ColorsAndType.html',
           inject: 'body',
