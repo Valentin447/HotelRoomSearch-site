@@ -7,9 +7,10 @@ margin-bottom: 50px;
 }
 .fonts-used__sample-text{
     display: flex;  
-    max-width: 336px;
-    white-space: pre-wrap;  // TODO  Костыль для переноса строчки в UiKit - body
-
+    max-width: 380px;
+}
+.fonts-used li:last-child .fonts-used__sample-text{
+    width: 315px;
 }
 .fonts-used__sample-tag{
     display: block;

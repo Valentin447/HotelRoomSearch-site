@@ -1,6 +1,7 @@
+include ../elements-title/elements-title
+include ../field/field
+
 mixin textField(textPlaceholder, textTitle, fieldId)
     .text-field
-            include ../elements-title/elements-title
             +elementsTitle(textTitle, fieldId)
-            include ../field/field
             +field(textPlaceholder, fieldId)(class!=attributes.class)

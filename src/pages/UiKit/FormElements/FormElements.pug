@@ -25,8 +25,6 @@ html(lang="ru")
             
             span.signature.signatureTextFieldDefault DEFAULT
             span.signature.signatureTextFieldHoverFocus HOVER / FOCUS
-            span.signature.signatureDropdownDefault DEFAULT
-            span.signature.signatureTextFieldMaskedDate DEFAULT
             span.signature.signatureDropdownRoomsDefault DEFAULT
             span.signature.signatureDropdownRoomsExpanded EXPANDED
 
@@ -40,11 +38,12 @@ html(lang="ru")
                         +dropdown('ДД.ММ.ГГГГ', 'date dropdown', 'dropdown_date')
                         +dropdown('19.08.2019', 'date dropdown', 'dropdown_date')
                     +dropdown('19 авг - 23 авг', 'filter date dropdown', 'dropdown_filter-date')
-                    +subscription('subscription text field')
+                    .FormElement__subscription
+                        +subscription('subscription text field')
                     +dropdown('2 спальни, 2 кровати...', 'dropdown', 'dropdown_rooms', 'спальни', 'кровати', 'ванные комнаты','2','2','0')
                     +dropdown('2 спальни, 2 кровати...', 'dropdown', 'dropdown_rooms', 'спальни', 'кровати', 'ванные комнаты','2','2','0')
                     +expandable-checkbox-list('expandable checkbox list', 'expandable-checkbox-list-1', 'Завтрак')
-                    +expandable-checkbox-list('expandable checkbox list', 'expandable-checkbox-list-2', 'Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь', 'Телевизор', 'Шампунь')
+                    +expandable-checkbox-list('expandable checkbox list', 'expandable-checkbox-list-2', 'Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь')
                     .icon-text-list
                         +icon-text('insert_emoticon', 'Комфорт', 'Шумопоглощающие стены')
                         +icon-text('location_city', 'Удобство', 'Окно в каждой из спален')
@@ -84,15 +83,15 @@ html(lang="ru")
                     +range-slider('Range Slider')
 
                     +elementsTitle('Buttons')
-                    .buttons
-                        +button('CLICK ME')(class='button_filled')
-                        +button('CLICK ME')(class='button_filled')
-                        +button('CLICK ME')(class='button_empty')
-                        +button('CLICK ME')(class='button_empty')
+                    .FormElement-column-3__buttons
+                        +button({value:"CLICK ME", mod: ["block"]})
+                        +button({value:"CLICK ME", mod: ["block"]})
+                        +button({value:"CLICK ME", mod: ["bordered","block"]})
+                        +button({value:"CLICK ME", mod: ["bordered","block"]})
                         .buttons-no-frame-position
-                            +button('CLICK ME')(class='button_no-frame')
-                            +button('CLICK ME')(class='button_no-frame')
-                    +button('перейти к оплате')(class='button_default')
+                            +button({value:"CLICK ME", mod: ["fill-none"]})
+                            +button({value:"CLICK ME", mod: ["fill-none"]})
+                    +button({link:"#", value:"перейти к оплате", mod: ["with-arrow","block"]})
                     .empty
                     +elementsTitle('pagination')
                     +pagination()

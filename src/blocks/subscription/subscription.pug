@@ -1,7 +1,8 @@
+include ../elements-title/elements-title
+include ../arrow/arrow
+
 mixin subscription(textTitle)
     .subscription
-        include ../elements-title/elements-title
-        include ../arrow/arrow
         +elementsTitle(textTitle, '')
         .subscription-field
             input.subscription-field-text(type="text", name="", placeholder="Email")

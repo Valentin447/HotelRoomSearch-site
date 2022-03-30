@@ -33,24 +33,11 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
-    color: #1F2041;
+    color: $DarkShade100;
 }
 
-.card-reservation-room-info-top-number-last{
-    font-family: 'Montserrat';
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
-    color: #1F2041;
-}
-
-.card-reservation-room-info-top-text{
+.card-reservation-room-info-top-text.font_h3{
     margin-left: 5px;
-    font-family: 'Montserrat';
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
     color: #BC9CFF;
 }
 
