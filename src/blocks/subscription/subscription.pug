@@ -1,8 +1,8 @@
 mixin subscription(textTitle)
     .subscription
-        include ../title/title
+        include ../elements-title/elements-title
         include ../arrow/arrow
-        +title(textTitle, '')
+        +elementsTitle(textTitle, '')
         .subscription-field
             input.subscription-field-text(type="text", name="", placeholder="Email")
             +arrow('arrow_forward')(class="arrow_gradient")

@@ -4,7 +4,7 @@ html(lang="ru")
         title= 'Form Elements'
     body.FormElements
         .FormElementsCenterLayer
-            include ../../../blocks/title/title
+            include ../../../blocks/elements-title/elements-title
             include ../../../blocks/gray-logo/gray-logo
             include ../../../blocks/text-field/text-field
             include ../../../blocks/dropdown/dropdown
@@ -51,20 +51,20 @@ html(lang="ru")
 
                 .FormElement-column-2
                     +checkbox-buttons('Checkbox Buttons', 'checkbox-buttons-1', 'Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)')
-                    +title('Radio Buttons')
+                    +elementsTitle('Radio Buttons')
                     +radio-buttons('RadioButtonsFormElement', 'Мужчина', 'Женщина')
-                    +title('Toggle')
+                    +elementsTitle('Toggle')
                     +toggle('Получать спецпредложения', 'FormElement-column-2-toggle-1')
                     +toggle('Получать спецпредложения', 'FormElement-column-2-toggle-2')
 
-                    +title('like button')
+                    +elementsTitle('like button')
                     .form-element-like-buttons
                         .form-element-like-buttons-dont-like
                             +like-button('2')
                         .form-element-like-buttons-like
                             +like-button('11')
                     
-                    +title('rate button')
+                    +elementsTitle('rate button')
                     .form-element-rate-button
                         .form-element-rate-button-1
                             +rate-button(4)
@@ -73,7 +73,7 @@ html(lang="ru")
 
                     +dropdown('Сколько гостей', 'dropdown','dropdown_guests', 'взрослые', 'дети', 'младенцы','0','0','0')
 
-                    +title('Rich Checkbox Buttons')
+                    +elementsTitle('Rich Checkbox Buttons')
                     .form-element-rich-checkbox-buttons
                         +checkbox('checkbox-buttons-rich-id', 'Широкий коридор', 'Ширина коридоров в номере', 'не менее 91 см.')
                         +checkbox('checkbox-buttons-rich-id', 'Помощник для инвалидов', 'На 1 этаже вас встретит специалист','и проводит до номера.')
@@ -83,7 +83,7 @@ html(lang="ru")
                 .FormElement-column-3
                     +range-slider('Range Slider')
 
-                    +title('Buttons')
+                    +elementsTitle('Buttons')
                     .buttons
                         +button('CLICK ME')(class='button_filled')
                         +button('CLICK ME')(class='button_filled')
@@ -94,11 +94,11 @@ html(lang="ru")
                             +button('CLICK ME')(class='button_no-frame')
                     +button('перейти к оплате')(class='button_default')
                     .empty
-                    +title('pagination')
+                    +elementsTitle('pagination')
                     +pagination()
 
                     +dropdown('Сколько гостей', 'dropdown','dropdown_guests', 'взрослые', 'дети', 'младенцы','2','1','0')
                     .FormElement-column-3-bullet-list
-                        +title('bullet list')
+                        +elementsTitle('bullet list')
                         +bullet-list('Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00')
 

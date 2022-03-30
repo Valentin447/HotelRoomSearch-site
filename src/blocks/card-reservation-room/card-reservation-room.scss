@@ -29,14 +29,16 @@
 }
 
 .card-reservation-room-info-top-number-first{
-    font-family: 'Quicksand-Bold';
+    font-family: 'Montserrat';
+    font-weight: bold;
     font-size: 14px;
     line-height: 17px;
     color: #1F2041;
 }
 
 .card-reservation-room-info-top-number-last{
-    font-family: 'Quicksand-Bold';
+    font-family: 'Montserrat';
+    font-weight: bold;
     font-size: 24px;
     line-height: 30px;
     color: #1F2041;
@@ -44,7 +46,8 @@
 
 .card-reservation-room-info-top-text{
     margin-left: 5px;
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat';
+    font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
@@ -52,14 +55,15 @@
 }
 
 .card-reservation-room-info-top-price-number{
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat';
+    font-weight: bold;
     font-size: 14px;
     line-height: 18px;
     color: $DarkShade50;
 }
 
 .card-reservation-room-info-top-price-text{
-    font-family: 'Montserrat-Regular';
+    font-family: 'Montserrat';
     font-size: 12px;
     line-height: 18px;
     color: $DarkShade50;
@@ -79,7 +83,7 @@
 .card-reservation-room-sum{
     display: flex;
     justify-content: space-between;
-    font-family: 'Montserrat-Regular';
+    font-family: 'Montserrat';
     color: $DarkShade75;
     font-size: 14px;
     line-height: 24px;
@@ -88,7 +92,7 @@
 .card-reservation-room-discount{
     display: flex;
     justify-content: space-between;
-    font-family: 'Montserrat-Regular';
+    font-family: 'Montserrat';
     font-size: 14px;
     line-height: 24px;
     color: $DarkShade75;
@@ -109,14 +113,15 @@
     border-radius: 10px;
     font-size: 12px;
     line-height: 18px;
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat';
+    font-weight: bold;
     margin-left: 5px;
 }
 
 .card-reservation-room-additional-services{
     display: flex;
     justify-content: space-between;
-    font-family: 'Montserrat-Regular';
+    font-family: 'Montserrat';
     font-size: 14px;
     line-height: 18px;
     color: $DarkShade75;
@@ -141,7 +146,8 @@
     border-radius: 10px;
     font-size: 12px;
     line-height: 18px;
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat';
+    font-weight: bold;
     margin-left: 5px;
 }
 
@@ -158,13 +164,14 @@
 }
 
 .card-reservation-room-total-text{
-    font-family: 'OpenSans-Bold';
+    font-family: 'Montserrat';
+    font-weight: bold;
     font-size: 19px;
     line-height: 20px;
 }
 
 .card-reservation-room-total-number{
-    font-family: 'Quicksand-Regular';
+    font-family: 'Montserrat';
     font-size: 19px;
     line-height: 20px;
     font-weight: bold;

@@ -1,3 +1,27 @@
-
+.font_h1{
+    font-size: 24px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: $DarkShade100;
+}
+.font_h2{
+    font-size: 19px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: $DarkShade100;
+}
+.font_h3{
+    font-size: 12px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: $DarkShade100;
+    text-transform: uppercase;
+}
+.font_body{
+    font-size: 14px;
+    font-family: 'Montserrat';
+    color: $DarkShade75;
+    line-height: 24px;
+}
 
 @import '__sample/fonts-used__sample.scss';

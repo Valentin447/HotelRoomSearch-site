@@ -3,7 +3,7 @@
     flex-direction: column;
     position: relative;
     width: 100%;
-    font-family: 'Montserrat-Regular';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -24,7 +24,7 @@
     display: flex;
 }
 
-@import '../title/title.scss';
+@import '../elements-title/elements-title.scss';
 @import '../variables/variables.scss';
 @import '_date/dropdown_date.scss';
 @import '_filter-date/dropdown_filter-date.scss';

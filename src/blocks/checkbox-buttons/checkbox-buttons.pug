@@ -1,8 +1,8 @@
-include ../title/title
+include ../elements-title/elements-title
 include __list/checkbox-buttons__list
 
 mixin checkbox-buttons(textTitle, listId, ...nameItem)
     .checkbox-buttons
-        +title(textTitle)
+        +elementsTitle(textTitle)
         +checkbox-buttons__list(listId, ...nameItem)
             

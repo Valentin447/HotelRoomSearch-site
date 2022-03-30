@@ -18,7 +18,8 @@
 }
 
 .room-card__info-top-number{
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat';
+    font-weight: bold;
     font-size: 19px;
     line-height: 24px;
 }
@@ -28,7 +29,8 @@
 }
 
 .room-card__info-top-lux{
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat';
+    font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
@@ -37,14 +39,15 @@
 }
 
 .room-card__info-top-price{
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat';
+    font-weight: bold;
     font-size: 14px;
     line-height: 18px;
     color: $DarkShade50;
 }
 
 .room-card__info-top-price-time{
-    font-family: 'Montserrat-Regular';
+    font-family: 'Montserrat';
     font-size: 12px;
     line-height: 18px;
     color: $DarkShade50;
@@ -60,7 +63,7 @@
 }
 
 .room-card__info-bottom-reviews{
-    font-family: 'Montserrat-Regular';
+    font-family: 'Montserrat';
     font-size: 14px;
     line-height: 18px;
     color: $DarkShade50;
@@ -68,6 +71,7 @@
 }
 
 .room-card__info-bottom-reviews-quantity{
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat';
+    font-weight: bold;
 }
 @import "../../variables/variables.scss";
