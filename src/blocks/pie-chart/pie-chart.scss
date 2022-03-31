@@ -1,0 +1,9 @@
+.pie-chart{
+    position: relative;
+    display: flex;
+    align-items: flex-end
+}
+
+@import "__pie/pie-chart__pie.scss";
+@import "__all-voices/pie-chart__all-voices.scss";
+@import "__help/pie-chart__help.scss";

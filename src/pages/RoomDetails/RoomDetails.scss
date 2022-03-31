@@ -30,7 +30,8 @@
 
 .room-details-info {
     display: grid;
-    grid-template-columns: min-content auto 1fr;
+    justify-items: start;
+    grid-template-columns: 0.85fr 1fr min-content;
     grid-template-rows: 1fr 1fr 1fr;
     max-width: 1161px;
     margin: 0 auto;
@@ -38,8 +39,8 @@
     .room-details-info-list  div:last-of-type{
         border: none;
     }
-    .room-details-info-impression{
-        padding-left: 81px;
+    .room-details-info-impression__title{
+        padding-bottom: 20px;
     }
     .room-details-info-reservation{
         grid-row-start: 1;
@@ -52,7 +53,6 @@
         grid-column-start: 1;
         grid-column-end: 3;
     }
-    .room-details-info-bullet-list{}
     .room-details-info-cancel{
         padding-left: 81px;
     }

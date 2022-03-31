@@ -1,0 +1,8 @@
+include __pie/pie-chart__pie
+include __all-voices/pie-chart__all-voices
+
+mixin pie-chart(params)
+  .pie-chart
+    +pie-chart__pie(params)
+    +pie-chart__all-voices(params)
+    include __help/pie-chart__help

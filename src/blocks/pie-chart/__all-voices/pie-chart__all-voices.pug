@@ -1,0 +1,15 @@
+mixin pie-chart__all-voices({bad = 0, norm = 0, good = 0, excellent = 0 } = {})
+  -
+    const allVoise = bad + norm + good + excellent;
+    const lastNumber = allVoise % 10;
+    const twoLastNumbers = allVoise % 100;
+
+    let textVoise = "голосов";
+    if(lastNumber === 1 && twoLastNumbers !== 11){
+      textVoise = "голос"
+    } else if ((lastNumber > 1 && lastNumber < 5) && twoLastNumbers > 20){
+      textVoise = "голоса"
+    }
+  .pie-chart__all-voices
+    span.pie-chart__number-voices.font_h1=allVoise
+    span.pie-chart__text-voices.font_h3=textVoise

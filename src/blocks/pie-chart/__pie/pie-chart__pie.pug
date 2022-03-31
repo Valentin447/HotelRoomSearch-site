@@ -1,0 +1,57 @@
+mixin pie-chart__pie({bad = 0, norm = 0, good = 0, excellent = 0} = {})
+  -
+    let allVoice = bad + norm + good + excellent                // Всего голосов
+    const radius = 58                                           // Радиус окружности
+    const circumference = 2 * radius * 3.14                     // Длинна окружности
+    const longSpace = 2                                         // Длинна пробела в пикселях
+    let numberSpaces = 0                                        // Количество пробелов
+    numberSpaces = bad ? numberSpaces + 1 : numberSpaces
+    numberSpaces = norm ? numberSpaces + 1 : numberSpaces
+    numberSpaces = good ? numberSpaces + 1 : numberSpaces
+    numberSpaces = excellent ? numberSpaces + 1 : numberSpaces
+
+    if (allVoice === 0){                                         // Если голосов нет - отрисовываем 4 равных доли
+      allVoice = 4
+      numberSpaces = 4
+      bad = 1
+      norm = 1
+      good = 1
+      excellent = 1
+    }
+    const circumferenceNoSpaces = circumference - (numberSpaces * longSpace)        // Длинна окружности без пробелов
+    const badLong = Math.trunc(circumferenceNoSpaces / allVoice * bad)              // Длинны долей без пробелов 
+    const normLong = Math.trunc(circumferenceNoSpaces / allVoice * norm)
+    const goodLong = Math.trunc(circumferenceNoSpaces / allVoice * good)
+    const excellentLong = Math.trunc(circumferenceNoSpaces / allVoice * excellent)
+
+    const badLongAndSpace = bad !== 0 ? badLong + longSpace : 0                      // Длинны долей с пробелами
+    const normLongAndSpace = norm !== 0 ? normLong + longSpace : 0
+    const goodLongAndSpace = good !== 0 ? goodLong + longSpace : 0
+    const excellentLongAndSpace = excellent !== 0 ? excellentLong + longSpace: 0
+
+
+  .pie-chart__pie 
+    .pie-chart__pie-circle
+      svg(class="pie-chart__pie-svg pie-chart__svg-bad" height="121" width="121")
+        linearGradient(id="grad4" x1="100%" y1="0%" x2="0%" y2="0%")
+          stop(offset="0%" style="stop-color:#919191;stop-opacity:1")
+          stop(offset="100%" style="stop-color:#3D4975;stop-opacity:1")
+        circle(cx="60" cy="60" r=radius stroke="url(#grad4)" stroke-width="4" fill-opacity="0" stroke-dasharray=`0,1,${badLong},${circumference}`)
+
+      svg(class="pie-chart__pie-svg pie-chart__svg-norm" height="121" width="121")
+        linearGradient(id="grad3" x1="100%" y1="0%" x2="0%" y2="0%")
+          stop(offset="0%" style="stop-color:#BC9CFF;stop-opacity:1")
+          stop(offset="100%" style="stop-color:#8BA4F9;stop-opacity:1")
+        circle(cx="60" cy="60" r=radius stroke="url(#grad3)" stroke-width="4" fill-opacity="0" stroke-dasharray=`0,${badLongAndSpace+ 1},${normLong},${circumference}`)
+
+      svg(class="pie-chart__pie-svg pie-chart__svg-good" height="121" width="121")
+        linearGradient(id="grad2" x1="100%" y1="0%" x2="0%" y2="0%")
+          stop(offset="0%" style="stop-color:#6FCF97;stop-opacity:1")
+          stop(offset="100%" style="stop-color:#66D2EA;stop-opacity:1")
+        circle(cx="60" cy="60" r=radius stroke="url(#grad2)" stroke-width="4" fill-opacity="0" stroke-dasharray=`0,${badLongAndSpace + normLongAndSpace + 1},${goodLong},${circumference}`)
+
+      svg(class="pie-chart__pie-svg pie-chart__svg-excellent" height="121" width="121")
+        linearGradient(id="grad1" x1="100%" y1="0%" x2="0%" y2="0%")
+          stop(offset="0%" style="stop-color:#FFE39C;stop-opacity:1")
+          stop(offset="100%" style="stop-color:#FFBA9C;stop-opacity:1")
+        circle(cx="60" cy="60" r=radius stroke="url(#grad1)" stroke-width="4" fill-opacity="0" stroke-dasharray=`0,${badLongAndSpace + normLongAndSpace + goodLongAndSpace + 1},${excellentLong},${circumference}`)

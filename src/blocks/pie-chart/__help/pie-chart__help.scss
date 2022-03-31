@@ -1,0 +1,32 @@
+.pie-chart__help{
+  display: flex;
+  flex-direction: column;
+  padding-left: 44px;
+}
+.pie-chart__help-text{
+  display: flex;
+color: $DarkShade75;
+position: relative;
+}
+.pie-chart__help-text::before{
+  content: "";
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  position: absolute;
+  left: -15px;
+  top: 6px;
+}
+.pie-chart__help-excellent::before{
+  background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+}
+.pie-chart__help-good::before{
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+.pie-chart__help-norm::before{
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.pie-chart__help-bad::before{
+  background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+}
+@import "./../../variables/variables.scss";

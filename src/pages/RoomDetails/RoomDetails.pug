@@ -3,6 +3,7 @@ include ../../blocks/icon-text/icon-text
 include ../../blocks/elements-title/elements-title
 include ../../blocks/comment/comment
 include ../../blocks/bullet-list/bullet-list
+include ../../blocks/pie-chart/pie-chart
 
 - let roomNumber = 888
 
@@ -29,7 +30,7 @@ html(lang="ru")
                 .room-details-info-impression
 
                     h2(class='room-details-info-impression__title font_h2') Впечатления от номера
-
+                    +pie-chart({bad: 0, norm: 65, good: 65, excellent: 130})
                 .room-details-info-reservation
                     include ../../blocks/card-reservation-room/card-reservation-room
                 .room-details-info-comments
