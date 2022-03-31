@@ -9,7 +9,7 @@ mixin header(classModifier, firstName, lastName)
                 include ../menu/menu
             .header-right 
                 .header-buttons
-                    +button('Войти')(class='button_empty')
-                    +button('Зарегистрироваться')(class='button_filled')
+                    +button({value: "Войти", mod: ['small']})
+                    +button({value: "Зарегистрироваться", mod: ['small']})
                 .header-user
                     text=(firstName + ' ' + lastName)

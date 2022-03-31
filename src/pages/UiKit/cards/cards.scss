@@ -32,10 +32,12 @@
     display: grid;
     position: absolute;
     left:  420px;
-    grid-template-rows: 532px 66px;
+    grid-template-rows: 1fr 66px;
     grid-template-columns: 380px;
     grid-gap: 19px;
     grid-auto-flow: column;
+
+    align-self: start;
 }
 .cards-column-3{
     display: grid;

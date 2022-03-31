@@ -21,7 +21,7 @@ include ../button/button
         .card-account-registration-special-offers
             +toggle('Получать спецпредложения', 'card-account-registration-special-offers-toggle-1')
         .card-account-registration-go-to-payment
-            +button('перейти к оплате')(class='button_default')
+            +button({value: "перейти к оплате", mod:["block", "with-arrow"]})
         .card-account-registration-enter
             p.card-account-registration-enter-text= 'Уже есть аккаунт на Toxin'
-            +button('войти')(class='button_empty')
+            +button({value: "войти", mod:["bordered"]})

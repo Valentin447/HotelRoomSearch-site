@@ -11,4 +11,5 @@ include ../button/button
     .card-search-dropdown-guests
         +dropdown('Сколько гостей', 'гости','dropdown_guests', 'взрослые', 'дети', 'младенцы','0','0','0') 
     .card-search-button
-        +button('подобрать номер')(class='button_default')
+        +button({value: "подобрать номер", mod:["block", "with-arrow"]})
+        
