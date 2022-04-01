@@ -1,15 +1,15 @@
 include ../button/button
 
 mixin header(classModifier, firstName, lastName)
-    header.header(class!=classModifier) 
-        // classModifier = .header_logined если пользователь залогинелся
-        .header-container
-            .header-left
-                include ../logo-toxin/logo-toxin
-                include ../menu/menu
-            .header-right 
-                .header-buttons
-                    +button({value: "Войти", mod: ['small']})
-                    +button({value: "Зарегистрироваться", mod: ['small']})
-                .header-user
-                    text=(firstName + ' ' + lastName)
+  header.header(class!=classModifier) 
+    // classModifier = .header_logined если пользователь залогинелся
+    .header-container
+      .header-left
+        include ../logo-toxin/logo-toxin
+        include ../menu/menu
+      .header-right 
+        .header-buttons
+          +button({value: "Войти", mod: ['small','bordered']})
+          +button({value: "Зарегистрироваться", mod: ['small']})
+        .header-user
+          text=(firstName + ' ' + lastName)

@@ -5,14 +5,15 @@ include ../../blocks/filter/filter
 
 doctype html
 html(lang="ru")
-    head
-        title= 'Search room'
-        meta(name="viewport", content="width=device-width")
-    body 
-        +header() 
-        .search-room-container 
-            +filter()
-            .search-room-found-rooms
-                include ../../blocks/found-rooms/found-rooms
-        .search-room-line-above-footer
-        include ../../blocks/footer/footer
+  head
+    title= 'Search room'
+    meta(name="viewport" content="width=device-width")
+    link(type="Image/x-icon" href="assets/img/favicon.ico" rel="icon")
+  body 
+    +header() 
+    .search-room-container 
+      +filter()
+      .search-room-found-rooms
+        include ../../blocks/found-rooms/found-rooms
+    .search-room-line-above-footer
+    include ../../blocks/footer/footer

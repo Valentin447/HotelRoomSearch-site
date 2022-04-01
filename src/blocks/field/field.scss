@@ -1,22 +1,22 @@
 .field{
-    height: 44px;
-    border: 1px solid $DarkShade25;
-    border-radius: 4px;
-    padding: 0 15px;  
+  height: 44px;
+  border: 1px solid $DarkShade25;
+  border-radius: 4px;
+  padding: 0 15px;  
 }
 .field::placeholder{
-    font-family: 'Montserrat';
-    color: $DarkShade25;
-    font-size: 14px;
-    
+  font-family: 'Montserrat';
+  color: $DarkShade25;
+  font-size: 14px;
+  
 }
 .field:focus,
 .field:hover{
-    border: 1px solid $DarkShade50;
+  border: 1px solid $DarkShade50;
 }
 .field:focus::placeholder,
 .field:hover::placeholder{
-    color: $DarkShade75;
+  color: $DarkShade75;
 }
 
 @import '../variables/variables.scss';

@@ -1,0 +1,15 @@
+include ../comment/comment
+include __counter/comments-list__counter
+                         
+mixin comments-list()
+  -
+    const commentsFor888 =[{name:"Мурад Сарафанов", date:"5 дней назад", likeCounter: 11, userNumber: 1, text:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."},
+                          {name:"Патрисия Стёклышкова", date:"Неделю назад", likeCounter: 2, userNumber: 2, text:"Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент"}];
+  section.comments-list
+    .comments-list__top
+      h2.comments-list__title.font_h2 Отзывы посетителей номера
+      +comments-list__counter(commentsFor888.length)
+    +comment(commentsFor888[0])
+    +comment(commentsFor888[1])
+  
+

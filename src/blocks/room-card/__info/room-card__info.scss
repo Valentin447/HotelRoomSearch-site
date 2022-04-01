@@ -1,77 +1,77 @@
 .room-card__info{
-    margin: 10px 17px 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+  margin: 10px 17px 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .room-card__info-top{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
 }
 
 .room-card__info-top-contaner{
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .room-card__info-top-number{
-    font-family: 'Montserrat';
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 24px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
 }
 
 .room-card__info-top-number-symbol{
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .room-card__info-top-lux{
-    font-family: 'Montserrat';
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: $Purple;
-    margin-left: 8px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $Purple;
+  margin-left: 8px;
 }
 
 .room-card__info-top-price{
-    font-family: 'Montserrat';
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 18px;
-    color: $DarkShade50;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: $DarkShade50;
 }
 
 .room-card__info-top-price-time{
-    font-family: 'Montserrat';
-    font-size: 12px;
-    line-height: 18px;
-    color: $DarkShade50;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  line-height: 18px;
+  color: $DarkShade50;
 }
 
 .room-card__info-bottom{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid $DarkShade10;
-    height: 40px;
-    margin-right: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid $DarkShade10;
+  height: 40px;
+  margin-right: 4px;
 }
 
 .room-card__info-bottom-reviews{
-    font-family: 'Montserrat';
-    font-size: 14px;
-    line-height: 18px;
-    color: $DarkShade50;
-    vertical-align: middle;  
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 18px;
+  color: $DarkShade50;
+  vertical-align: middle;  
 }
 
 .room-card__info-bottom-reviews-quantity{
-    font-family: 'Montserrat';
-    font-weight: bold;
+  font-family: 'Montserrat';
+  font-weight: bold;
 }
 @import "../../variables/variables.scss";

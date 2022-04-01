@@ -1,23 +1,24 @@
 doctype html
 html(lang="ru")
-    head
-        title= 'Headers & Footers'
-    body.HeadersFooters
-        .HeadersFootersCenterLayer
-            include ../../../blocks/gray-logo/gray-logo
+  head
+    title= 'Headers & Footers'
+    link(type="Image/x-icon" href="../assets/img/favicon.ico" rel="icon")
+  body.HeadersFooters
+    .HeadersFootersCenterLayer
+      include ../../../blocks/gray-logo/gray-logo
 
-            include ../../../blocks/header/header
+      include ../../../blocks/header/header
 
-            .HeadersFooters-item1
-                +header()
-            .HeadersFooters-item2
-                +header('header_logined', 'Юлий', 'Цезарь')
-            .HeadersFooters-item3
-                include ../../../blocks/footer/footer
-            .HeadersFooters-item4
-                .footer-creative-box
-                    include ../../../blocks/footer-creative/footer-creative
-            
-                
+      .HeadersFooters-item1
+        +header()
+      .HeadersFooters-item2
+        +header('header_logined', 'Юлий', 'Цезарь')
+      .HeadersFooters-item3
+        include ../../../blocks/footer/footer
+      .HeadersFooters-item4
+        .footer-creative-box
+          include ../../../blocks/footer-creative/footer-creative
+
+
 
 

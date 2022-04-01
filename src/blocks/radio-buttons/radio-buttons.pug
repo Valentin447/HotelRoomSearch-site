@@ -1,10 +1,10 @@
 include ../radio-button/radio-button
 
 mixin radio-buttons(idRadioButon, ...value)
-    .radio-buttons
-        .radio-buttons-list
-            each val, index in value
-                if(index == 0)
-                    +radio-button(idRadioButon, val)(class!='radio-button_checked')
-                else
-                    +radio-button(idRadioButon, val)
+  .radio-buttons
+    .radio-buttons-list
+      each val, index in value
+        if(index == 0)
+          +radio-button(idRadioButon, val)(class!='radio-button_checked')
+        else
+          +radio-button(idRadioButon, val)

@@ -39,76 +39,10 @@ $arrow-right: 10px;
     &:hover {
         background: $linear-gradient05;
     }
-    &_fill-none {
-        background: none;
-        color: $Purple;
-        padding: 0;
-        line-height: 15px;
-        min-width: 0;
-    }
-    &_fill-none:hover {
-        background: none;
-        color: $DarkShade50;
-    }
-    &_bordered {
-        background: none;
-        color: $Purple;
-        min-height: $height - $padding * 2 - $border-width * 2;
-        line-height: $height - $padding * 2 - $border-width * 2;
-        border: solid $border-width transparent;
-        background-image: linear-gradient(white, white), $linear-gradient;
-        background-origin: border-box;
-        background-clip: padding-box, border-box;
-        -webkit-background-clip: padding-box, border-box;
-        color: $Purple;
-        &:hover {
-            border: solid $border-width transparent;
-            background-image: linear-gradient(white, white), $linear-gradient05;
-            background-origin: border-box;
-            background-clip: padding-box, border-box;
-            -webkit-background-clip: padding-box, border-box;
-        }
-    }
-    &_small {
-        min-height: $height-small - $padding * 2;
-        line-height: $height-small - $padding * 2;
-        min-width: unset;
-        padding-left: $padding-small-lr;
-        padding-right: $padding-small-lr;
-    }
-    &_small.button_bordered {
-        min-height: $height-small - $padding * 2 - $border-width * 2;
-        line-height: $height-small - $padding * 2 - $border-width * 2;
-        min-width: unset;
-        padding-left: $padding-small-lr - $border-width;
-        padding-right: $padding-small-lr - $border-width;
-    }
-    &_block {
-        display: block;
-        min-width: 100%;
-    }
-    &_with-arrow {
-        $arrow-rl: $padding + $arrow-fsz + $arrow-right;
-        position: relative;
-        padding-right: $arrow-rl;
-        padding-left: $arrow-rl;
-        &::after {
-            content: "arrow_forward";
-            position: absolute;
-            right: $arrow-right;
-            top: 50%;
-            transform: translateY(-50%);
-            font-family: "Material Icons";
-            font-weight: normal;
-            font-style: normal;
-            font-size: 24px;
-            line-height: 1;
-            letter-spacing: normal;
-            text-transform: none;
-            display: inline-block;
-            white-space: nowrap;
-            word-wrap: normal;
-            direction: ltr;
-        }
-    }
+    
 }
+@import "./_fill-none/button_file-none.scss";
+@import "./_bordered/button_bordered.scss";
+@import "./_small/button_small.scss";
+@import "./_block/button_block.scss";
+@import "./_with-arrow/button_with-arrow.scss";

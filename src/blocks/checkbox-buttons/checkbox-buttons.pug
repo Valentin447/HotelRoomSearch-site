@@ -2,7 +2,6 @@ include ../elements-title/elements-title
 include __list/checkbox-buttons__list
 
 mixin checkbox-buttons(textTitle, listId, ...nameItem)
-    .checkbox-buttons
-        +elementsTitle(textTitle)
-        +checkbox-buttons__list(listId, ...nameItem)
-            
+  .checkbox-buttons
+    +elementsTitle(textTitle)
+    +checkbox-buttons__list(listId, ...nameItem)

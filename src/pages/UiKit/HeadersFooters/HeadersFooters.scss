@@ -1,24 +1,24 @@
 .HeadersFooters{
-    background: #E5E5E5;;
+  background: #E5E5E5;;
 }
 
 .HeadersFootersCenterLayer{
-    position: absolute;
-    width: 1440px;
-    height: 1853px;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
-    margin-top: 9px;
-    background:#F4F4F6;
+  position: absolute;
+  width: 1440px;
+  height: 1853px;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-top: 9px;
+  background:#F4F4F6;
 
 }
 
 .gray-logo{
-    margin: 30px 0px 0px 30px;
-    position: absolute;
-    }
+  margin: 30px 0px 0px 30px;
+  position: absolute;
+  }
 
 // .HeadersFooters-grid{
 //     width: 100%;
@@ -29,28 +29,28 @@
 //     margin-top: 140px;
 // }
 .HeadersFooters-item1{
-    position: relative;
-    left: 0;
-    top: 140px;
+  position: relative;
+  left: 0;
+  top: 140px;
 }
 
 .HeadersFooters-item2{
-    position: relative;
-    top: 250px;
+  position: relative;
+  top: 250px;
 }
 
 .HeadersFooters-item3{
-    position: relative;
-    top: 360px;
+  position: relative;
+  top: 360px;
 }
 
 .HeadersFooters-item4{
-    position: relative;
-    top: 400px;
+  position: relative;
+  top: 400px;
 }
 .footer-creative-box{
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 @import '../../../blocks/header/header.scss';

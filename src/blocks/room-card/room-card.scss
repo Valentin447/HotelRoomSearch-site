@@ -1,13 +1,13 @@
 .room-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 270px;
-    height: 257px;
-    position: relative;
-    background: #FFFFFF;
-    box-shadow: 0px 10px 20px $DarkShade5;
-    border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 270px;
+  height: 257px;
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px $DarkShade5;
+  border-radius: 4px;
 }
 
 @import '../variables/variables.scss';

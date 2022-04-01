@@ -2,26 +2,16 @@ include ../../blocks/header/header
 
 doctype html
 html(lang="ru")
-    head
-        title= 'Landing page'
-        meta(name="viewport", content="width=device-width")
-    body   
-        .landing-page__img 
-            include ../../blocks/slogan/slogan
-        //- .landing-page__uiKit
-        //-     ul
-        //-         li
-        //-             a.ColorType(href='UiKit/ColorsAndType.html') ColorTypePage
-        //-         li
-        //-             a.FormElements(href='UiKit/FormElements.html') FormElements
-        //-         li
-        //-             a.FormElements(href='UiKit/cards.html') cards
-        //-         li
-        //-             a.FormElements(href='UiKit/HeadersFooters.html') HeadersFooters
-        +header()
-        .landing-page__card-search-container
-            .landing-page__card-search
-                include ../../blocks/card-search/card-search
-        include ../../blocks/footer/footer
+  head
+    title= 'Landing page'
+    meta(name="viewport" content="width=device-width")
+    link(type="Image/x-icon" href="assets/img/favicon.ico" rel="icon")
+  body   
+    .landing-page__img 
+      include ../../blocks/slogan/slogan
+    +header()
+    .landing-page__card-search-container
+      .landing-page__card-search
+        include ../../blocks/card-search/card-search
+    include ../../blocks/footer/footer
 
-        

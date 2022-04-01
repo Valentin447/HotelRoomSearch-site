@@ -1,28 +1,28 @@
 .toggle__switch-input{
-    display: none;
+  display: none;
 }
 
 .toggle__switch{
-    position: relative;
+  position: relative;
 }
 
 .toggle__switch-field{
-    position: absolute;
-    width: 38px;
-    height: 18px;
-    border: 1px solid $DarkShade25;
-    border-radius: 10px;
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  border: 1px solid $DarkShade25;
+  border-radius: 10px;
 }
 
 .toggle__switch-point{
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border-radius: 10px;
-    background: $DarkShade25;
-    transition: transform .2s ease-in-out;
-    left: 5px;
-    top: 4px;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  background: $DarkShade25;
+  transition: transform .2s ease-in-out;
+  left: 5px;
+  top: 4px;
 }
 
 @import './../../variables/variables.scss';

@@ -2,8 +2,8 @@ include ../elements-title/elements-title
 include ../arrow/arrow
 
 mixin subscription(textTitle)
-    .subscription
-        +elementsTitle(textTitle, '')
-        .subscription-field
-            input.subscription-field-text(type="text", name="", placeholder="Email")
-            +arrow('arrow_forward')(class="arrow_gradient")
+  .subscription
+    +elementsTitle(textTitle, '')
+    .subscription-field
+      input.subscription-field-text(type="text" name="" placeholder="Email")
+      +arrow('arrow_forward')(class="arrow_gradient")

@@ -1,10 +1,10 @@
 include ../like-button/like-button
 
-mixin comment(name, date, likeButtonCounter, text, userNumber)
-    .comment    
-        .comment__foto(style='background-image: url(../assets/img/avatars/user-'+userNumber+'.png);')
-        p.comment__name=name
-        p.comment__date=date
-        +like-button(likeButtonCounter)
-        p.comment__text=text
+mixin comment(params)
+  article.comment    
+    .comment__foto(style='background-image: url(../assets/img/avatars/user-'+params.userNumber+'.png);')
+    p.comment__name=params.name
+    p.comment__date=params.date
+    +like-button(params.likeCounter)
+    p.comment__text=params.text
 

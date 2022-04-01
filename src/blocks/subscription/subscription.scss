@@ -1,24 +1,24 @@
 .subscription-field{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
-    height: 44px;
-    border: 1px solid $DarkShade25;
-    border-radius: 4px;
-    padding-left: 15px;
-    list-style-type: none;
-    background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: 44px;
+  border: 1px solid $DarkShade25;
+  border-radius: 4px;
+  padding-left: 15px;
+  list-style-type: none;
+  background-color: white;
 }
 
 .subscription-field-text{
-    height: 42px;
-    border: none;
+  height: 42px;
+  border: none;
 }
 
 .subscription-field-text::placeholder{
-    font-family: 'Montserrat';
-    color: $DarkShade25;
-    font-size: 14px;
+  font-family: 'Montserrat';
+  color: $DarkShade25;
+  font-size: 14px;
 }
 @import '../arrow/arrow.scss';

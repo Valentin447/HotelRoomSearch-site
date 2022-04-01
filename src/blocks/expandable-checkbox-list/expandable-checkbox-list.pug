@@ -3,11 +3,11 @@ include ../arrow/arrow
 include __list/expandable-checkbox-list__list
 
 mixin expandable-checkbox-list(textTitle, listId, ...nameItem)
-    .expandable-checkbox-list
-        .expandable-checkbox-list__title
-            .expandable-checkbox-list__title-text
-                +elementsTitle(textTitle, '')
-            .expandable-checkbox-list__title-arrow
-                +arrow('expand_more')
-        
-        +expandable-checkbox-list__list(listId, ...nameItem)
+  .expandable-checkbox-list
+    .expandable-checkbox-list__title
+      .expandable-checkbox-list__title-text
+        +elementsTitle(textTitle, '')
+      .expandable-checkbox-list__title-arrow
+        +arrow('expand_more')
+
+    +expandable-checkbox-list__list(listId, ...nameItem)

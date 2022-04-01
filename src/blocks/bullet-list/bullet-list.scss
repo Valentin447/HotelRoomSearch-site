@@ -1,31 +1,31 @@
-.bullet-list{
-    list-style: none;
+.bullet-list {
+  list-style: none;
 }
 
-.bullet-list-item{
-    display: inline-flex;
-    margin-top: 10px;
-    width: 320px;
+.bullet-list-item {
+  display: inline-flex;
+  margin-top: 10px;
+  width: 320px;
 }
 
-.bullet-list-item-text{
-    font-family: 'Montserrat';
-    font-size: 14px;
-    line-height: 24px;
-    padding-left: 21px;
-    width: 260px;
-    color: $DarkShade75;
+.bullet-list-item-text {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 21px;
+  width: 260px;
+  color: $DarkShade75;
 }
 
-.bullet-list-item:before{
-    content: '';
-    display: block;
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
-    background-color: $DarkShade25;
-    margin-top: 6px;
+.bullet-list-item:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: $DarkShade25;
+  margin-top: 6px;
 }
 
 @import '../variables/variables.scss';

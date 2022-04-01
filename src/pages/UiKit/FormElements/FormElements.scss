@@ -1,152 +1,152 @@
 * {
-    margin: 0;
+  margin: 0;
 }
 
 .FormElements {
-    background: #e5e5e5;
+  background: #e5e5e5;
 }
 .FormElementsCenterLayer {
-    position: absolute;
-    width: 1440px;
-    height: 1853px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 9px;
-    background: #fff;
+  position: absolute;
+  width: 1440px;
+  height: 1853px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9px;
+  background: #fff;
 }
 //signature
 .signature {
-    position: absolute;
-    font-family: "Montserrat";
-    font-size: 12px;
-    line-height: 15px;
-    color: $DarkShade50;
+  position: absolute;
+  font-family: "Montserrat";
+  font-size: 12px;
+  line-height: 15px;
+  color: $DarkShade50;
 }
 .signatureTextFieldDefault {
-    top: 140px;
-    left: 405px;
+  top: 140px;
+  left: 405px;
 }
 .signatureTextFieldHoverFocus {
-    top: 227px;
-    left: 364px;
+  top: 227px;
+  left: 364px;
 }
 .signatureDropdownDefault {
-    top: 311px;
-    left: 405px;
+  top: 311px;
+  left: 405px;
 }
 .signatureTextFieldMaskedDate {
-    top: 395px;
-    left: 405px;
+  top: 395px;
+  left: 405px;
 }
 .signatureDropdownRoomsDefault {
-    top: 876px;
-    left: 351px;
+  top: 876px;
+  left: 351px;
 }
 
 .signatureDropdownRoomsExpanded {
-    top: 960px;
-    left: 337px;
+  top: 960px;
+  left: 337px;
 }
 
 // Layout
 
 .FormElementLayout {
-    display: flex;
-    position: absolute;
-    top: 142px;
-    left: 141px;
+  display: flex;
+  position: absolute;
+  top: 142px;
+  left: 141px;
 }
 
 .FormElement-column-1 {
-    display: grid;
-    position: absolute;
-    grid-template-rows: 65px 66px 67px 85px 86px 85px 145px 65px 207px 45px 278px 130px;
-    grid-template-columns: 320px;
-    grid-gap: 19px;
-    grid-auto-flow: column;
+  display: grid;
+  position: absolute;
+  grid-template-rows: 65px 66px 67px 85px 86px 85px 145px 65px 207px 45px 278px 130px;
+  grid-template-columns: 320px;
+  grid-gap: 19px;
+  grid-auto-flow: column;
 }
 
 .FormElement-column-2 {
-    display: grid;
-    position: absolute;
-    left: 446px;
-    grid-template-rows: 152px 9px 44px 11px 15px 46px 12px 41px 12px 201px 301px 12px 327px 180px;
-    grid-template-columns: 320px;
-    grid-gap: 19px;
-    grid-auto-flow: column;
+  display: grid;
+  position: absolute;
+  left: 446px;
+  grid-template-rows: 152px 9px 44px 11px 15px 46px 12px 41px 12px 201px 301px 12px 327px 180px;
+  grid-template-columns: 320px;
+  grid-gap: 19px;
+  grid-auto-flow: column;
 }
 
 .FormElement-column-3 {
-    display: grid;
-    position: absolute;
-    left: 838px;
-    grid-template-rows: 68px 11px 178px 44px 1px 13px 285px 301px 120px 201px 301px 120px 327px 180px;
-    grid-template-columns: 320px;
-    grid-gap: 19px;
-    grid-auto-flow: column;
+  display: grid;
+  position: absolute;
+  left: 838px;
+  grid-template-rows: 68px 11px 178px 44px 1px 13px 285px 301px 120px 201px 301px 120px 327px 180px;
+  grid-template-columns: 320px;
+  grid-gap: 19px;
+  grid-auto-flow: column;
 }
 
 .dropdown-date-joint {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .dropdown-date-joint .dropdown:first-child {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 // blocks
 .gray-logo {
-    margin: 30px 0px 0px 30px;
-    position: absolute;
+  margin: 30px 0px 0px 30px;
+  position: absolute;
 }
 
 .form-element-like-buttons {
-    display: flex;
+  display: flex;
 }
 .form-element-like-buttons-dont-like {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .form-element-rate-button {
-    display: flex;
+  display: flex;
 }
 .form-element-rate-button-1 {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .FormElement-column-3__buttons {
-    display: grid;
-    justify-content: start;
-    grid-template-columns: 101px 101px;
-    grid-template-rows: 44px 44px;
-    grid-column-gap: 20px;
-    grid-row-gap: 30px;
-    padding-top: 3px;
+  display: grid;
+  justify-content: start;
+  grid-template-columns: 101px 101px;
+  grid-template-rows: 44px 44px;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+  padding-top: 3px;
 }
 .FormElement-column-3 .buttons-no-frame-position {
-    display: flex;
-    width: 142px;
-    justify-content: space-between;
+  display: flex;
+  width: 142px;
+  justify-content: space-between;
 }
 .FormElement__subscription {
-    width: 267px;
+  width: 267px;
 }
 // Делаем Buttons как на UiKit по умолчанию
 .FormElement-column-3 .FormElement-column-3__buttons > button:nth-child(2) {
-    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+  background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
 }
 .FormElement-column-3 .FormElement-column-3__buttons > button:nth-child(4) {
-    border: solid 2px transparent;
-    background-image: linear-gradient(white, white), linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    -webkit-background-clip: padding-box, border-box;
+  border: solid 2px transparent;
+  background-image: linear-gradient(white, white), linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  -webkit-background-clip: padding-box, border-box;
 }
 .FormElement-column-3 .FormElement-column-3__buttons .buttons-no-frame-position button:nth-child(2){
-    background: none;
-    color: $DarkShade50;
+  background: none;
+  color: $DarkShade50;
 }
 
 @import "../../../blocks/text-field/text-field.scss";

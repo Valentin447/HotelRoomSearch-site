@@ -3,19 +3,20 @@ include ../../../blocks/room-card/room-card
 doctype html
 
 html(lang="ru")
-    head
-        title= 'cards'
-    body.cards
-        .cards-center-layer
-            include ../../../blocks/gray-logo/gray-logo
-            .cards-layout
-                .cards-column-1
-                    include ../../../blocks/card-search/card-search
-                    include ../../../blocks/card-account-registration/card-account-registration
-                .cards-column-2
-                    include ../../../blocks/card-reservation-room/card-reservation-room
-                    include ../../../blocks/card-entry/card-entry
-                .cards-column-3
-                    include ../../../blocks/datepicker/datepicker
-                    +room-card(888, 9990, 145, 5, true)
-                    +room-card(840, 9900, 65, 4, false)
+  head
+    title= 'cards'
+    link(type="Image/x-icon" href="../assets/img/favicon.ico" rel="icon")
+  body.cards
+    .cards-center-layer
+      include ../../../blocks/gray-logo/gray-logo
+      .cards-layout
+        .cards-column-1
+          include ../../../blocks/card-search/card-search
+          include ../../../blocks/card-account-registration/card-account-registration
+        .cards-column-2
+          include ../../../blocks/card-reservation-room/card-reservation-room
+          include ../../../blocks/card-entry/card-entry
+        .cards-column-3
+          include ../../../blocks/datepicker/datepicker
+          +room-card(888, 9990, 145, 5, true)
+          +room-card(840, 9900, 65, 4, false)

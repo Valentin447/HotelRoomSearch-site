@@ -4,24 +4,24 @@ include ../toggle/toggle
 include ../button/button
 
 .card-account-registration
-    .card-account-registration-layout
-        p.card-account-registration-title= 'Регистрация аккаунта'
-        .card-account-registration-first-name
-            +textField('Имя')
-        .card-account-registration-last-name
-            +textField('Фамилия')
-        .card-account-registration-radio-buttons
-            +radio-buttons('idCardAccountRegistrationRadioButtons', 'Мужчина', 'Женщина')
-        .card-account-registration-date-birth
-            +textField('ДД.ММ.ГГГГ', 'дата рождения')(class='text-field_masked-date')
-        .card-account-registration-email
-            +textField('Email', 'данные для входа в сервис')
-        .card-account-registration-password
-            +textField('Пароль')
-        .card-account-registration-special-offers
-            +toggle('Получать спецпредложения', 'card-account-registration-special-offers-toggle-1')
-        .card-account-registration-go-to-payment
-            +button({value: "перейти к оплате", mod:["block", "with-arrow"]})
-        .card-account-registration-enter
-            p.card-account-registration-enter-text= 'Уже есть аккаунт на Toxin'
-            +button({value: "войти", mod:["bordered"]})
+  .card-account-registration-layout
+    p.card-account-registration-title= 'Регистрация аккаунта'
+    .card-account-registration-first-name
+      +textField('Имя')
+    .card-account-registration-last-name
+      +textField('Фамилия')
+    .card-account-registration-radio-buttons
+      +radio-buttons('idCardAccountRegistrationRadioButtons', 'Мужчина', 'Женщина')
+    .card-account-registration-date-birth
+      +textField('ДД.ММ.ГГГГ', 'дата рождения')(class='text-field_masked-date')
+    .card-account-registration-email
+      +textField('Email', 'данные для входа в сервис')
+    .card-account-registration-password
+      +textField('Пароль')
+    .card-account-registration-special-offers
+      +toggle('Получать спецпредложения', 'card-account-registration-special-offers-toggle-1')
+    .card-account-registration-go-to-payment
+      +button({value: "перейти к оплате", mod:["block", "with-arrow"]})
+    .card-account-registration-enter
+      p.card-account-registration-enter-text= 'Уже есть аккаунт на Toxin'
+      +button({value: "войти", mod:["bordered"]})

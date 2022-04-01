@@ -1,0 +1,14 @@
+.button_small {
+  min-height: $height-small - $padding * 2;
+  line-height: $height-small - $padding * 2;
+  min-width: unset;
+  padding-left: $padding-small-lr;
+  padding-right: $padding-small-lr;
+}
+.button_small.button_bordered {
+  min-height: $height-small - $padding * 2 - $border-width * 2;
+  line-height: $height-small - $padding * 2 - $border-width * 2;
+  min-width: unset;
+  padding-left: $padding-small-lr - $border-width;
+  padding-right: $padding-small-lr - $border-width;
+}

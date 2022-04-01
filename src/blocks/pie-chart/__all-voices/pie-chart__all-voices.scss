@@ -1,19 +1,19 @@
 .pie-chart__all-voices{
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    height: 121px;
-    width: 121px;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 121px;
+  width: 121px;
 }
 .pie-chart__number-voices{
-    color: $Purple;
-    padding-bottom: 4px;
+  color: $Purple;
+  padding-bottom: 4px;
 }
 .pie-chart__text-voices{
-    color: $Purple;
+  color: $Purple;
 }
 @import "./../../variables/variables.scss";

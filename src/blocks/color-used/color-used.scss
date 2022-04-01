@@ -1,24 +1,24 @@
 @mixin color-used {
-.color-used {
-    display: flex;
-    height: 70px;
-    font-family: 'Montserrat';
-    font-weight: bold;
-    font-style: normal;
-    font-size: 19px;
-    line-height: 29px;
-    align-items: center;
-    padding: 0px;
-    margin: 0px;
-}
-.color-used-color{
-    font-weight: normal; 
-    font-family: 'Montserrat';
-}
-.color-used-sample{
-    width: 70px;
-    height: 70px;
-    border-radius: 6px;
-    margin: 0px 40px 0px 0px;
-}
-}
+  .color-used {
+      display: flex;
+      height: 70px;
+      font-family: 'Montserrat';
+      font-weight: bold;
+      font-style: normal;
+      font-size: 19px;
+      line-height: 29px;
+      align-items: center;
+      padding: 0px;
+      margin: 0px;
+  }
+  .color-used-color{
+      font-weight: normal; 
+      font-family: 'Montserrat';
+  }
+  .color-used-sample{
+      width: 70px;
+      height: 70px;
+      border-radius: 6px;
+      margin: 0px 40px 0px 0px;
+  }
+  }

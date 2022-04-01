@@ -2,11 +2,11 @@ include ../__button-enter/dropdown__button-enter
 include ../__button-clean/dropdown__button-clean
 
 mixin dropdown__list(textRow1, textRow2, textRow3, counterRow1, counterRow2, counterRow3)
-    include ../__row/dropdown__row
-    .dropdown__list
-        +dropdown__row(textRow1, counterRow1)
-        +dropdown__row(textRow2, counterRow2)
-        +dropdown__row(textRow3, counterRow3)
-        .dropdown__list-buttons
-            +dropdown__button-enter()
-            +dropdown__button-clean()
+  include ../__row/dropdown__row
+  .dropdown__list
+    +dropdown__row(textRow1, counterRow1)
+    +dropdown__row(textRow2, counterRow2)
+    +dropdown__row(textRow3, counterRow3)
+    .dropdown__list-buttons
+      +dropdown__button-enter()
+      +dropdown__button-clean()

@@ -1,14 +1,14 @@
 .footer-top__hotel-opinions{
-    width: 260px;
-    @media (max-width: 999px) {
-        order: 1;
-    }
+  width: 260px;
+  @media (max-width: 999px) {
+      order: 1;
+  }
 }
 
 .footer-top__hotel-opinions-text{
-    font-family: "Montserrat";
-    font-size: 14px;
-    line-height: 24px;
-    margin-top: 18px;
-    color: $DarkShade75;
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 18px;
+  color: $DarkShade75;
 }

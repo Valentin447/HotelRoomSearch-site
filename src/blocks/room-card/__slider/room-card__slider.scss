@@ -1,74 +1,74 @@
 .room-card__slider{
-    width: 100%;
-    position: relative;
-    .room-card__slider-shadow-left{
-        position: absolute;
-        display: none;
-        width: 42px;
-        height: 151px;
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
-        z-index: 3;
-    }
-    .room-card__slider-shadow-right{
-        position: absolute;
-        display: none;
-        width: 42px;
-        height: 151px;
-        right: 0px;
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
-        transform: matrix(-1, 0, 0, 1, 0, 0);
-        z-index: 3;
-    }
+  width: 100%;
+  position: relative;
+  .room-card__slider-shadow-left{
+      position: absolute;
+      display: none;
+      width: 42px;
+      height: 151px;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+      z-index: 3;
+  }
+  .room-card__slider-shadow-right{
+      position: absolute;
+      display: none;
+      width: 42px;
+      height: 151px;
+      right: 0px;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      z-index: 3;
+  }
 }
 
 .room-card__left-button, .room-card__right-button{
-    top: 53px;
-    color: #FFFFFF;
-    position: absolute;
-    display: none;
-    width: 44px;
-    height: 44px;
-    align-items: center;
-    justify-content: center;
-    z-index: 3;
-    cursor: pointer;
+  top: 53px;
+  color: #FFFFFF;
+  position: absolute;
+  display: none;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  cursor: pointer;
 }
 .room-card__left-button{
-    user-select: none;
-    transform: rotate(90deg);
+  user-select: none;
+  transform: rotate(90deg);
 }
 .room-card__right-button{
-    user-select: none;
-    transform: rotate(-90deg);
-    right: 0;
+  user-select: none;
+  transform: rotate(-90deg);
+  right: 0;
 }
 .room-card__slides-item{
-    position: absolute;
-    transition: opacity 0.5s ease-in;
-    opacity: 0;
-    z-index: 2;
-    left: 0;
-    top: 0;
-    display: block;
-    border-radius: 4px 4px 0 0;
+  position: absolute;
+  transition: opacity 0.5s ease-in;
+  opacity: 0;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  display: block;
+  border-radius: 4px 4px 0 0;
 }
 
 .room-card__dots{
-    position: absolute;
-    display: flex;
-    top: 129px;
-    right: 12px;
-    flex-direction: row;
-    z-index: 3;
-    cursor: pointer;
+  position: absolute;
+  display: flex;
+  top: 129px;
+  right: 12px;
+  flex-direction: row;
+  z-index: 3;
+  cursor: pointer;
 }
 .room-card__dots-item{
-    height: 5px;
-    width: 5px;
-    border: 1px solid #FFFFFF;
-    border-radius: 4px;
-    margin-right: 4px;
+  height: 5px;
+  width: 5px;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  margin-right: 4px;
 }
 .room-card__dots-item_current{
-    background: #FFFFFF;
+  background: #FFFFFF;
 }

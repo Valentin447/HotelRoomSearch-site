@@ -1,17 +1,17 @@
 .icon-text{
-    width: 280px;
-    height: 48px;
-    display: flex;
-    align-items: center;
+  width: 280px;
+  height: 48px;
+  display: flex;
+  align-items: center;
 }
 
 .icon-text-border-bottom{
-    border-bottom: 1px solid $DarkShade10;
-    border-left: none;
-    width: 280px;
-    height: 88px;
-    display: flex;
-    align-items: center;
+  border-bottom: 1px solid $DarkShade10;
+  border-left: none;
+  width: 280px;
+  height: 88px;
+  display: flex;
+  align-items: center;
 }
 
 @import './../variables/variables.scss';

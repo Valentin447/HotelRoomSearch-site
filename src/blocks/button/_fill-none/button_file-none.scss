@@ -1,0 +1,11 @@
+.button_fill-none {
+  background: none;
+  color: $Purple;
+  padding: 0;
+  line-height: 15px;
+  min-width: 0;
+}
+.button_fill-none:hover {
+  background: none;
+  color: $DarkShade50;
+}

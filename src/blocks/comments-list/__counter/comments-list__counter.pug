@@ -1,0 +1,13 @@
+mixin comments-list__counter(quantityComments = 0)
+  -
+    const lastNumber = quantityComments % 10;
+    const twoLastNumbers = quantityComments % 100;
+
+    let text = "отзывов";
+    if(lastNumber === 1 && twoLastNumbers !== 11){
+      text = "отзыв"
+    } else if ((lastNumber > 1 && lastNumber < 5) && (twoLastNumbers > 20 || twoLastNumbers < 5)){
+      text = "отзыва"
+    }
+
+  span.comments-list__counter.font_body=`${quantityComments} ${text}`

@@ -7,7 +7,7 @@ mixin pie-chart__all-voices({bad = 0, norm = 0, good = 0, excellent = 0 } = {})
     let textVoise = "голосов";
     if(lastNumber === 1 && twoLastNumbers !== 11){
       textVoise = "голос"
-    } else if ((lastNumber > 1 && lastNumber < 5) && twoLastNumbers > 20){
+    } else if ((lastNumber > 1 && lastNumber < 5) && (twoLastNumbers > 20 || twoLastNumbers < 5)){
       textVoise = "голоса"
     }
   .pie-chart__all-voices

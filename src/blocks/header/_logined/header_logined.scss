@@ -1,13 +1,13 @@
 .header_logined .header-buttons{
-    display: none;
+  display: none;
 }
 
 .header_logined .header-user{
-    display:  flex;
-    border-left: 1px solid $DarkShade10;
-    padding-left: 20px;
-    height: 30px;
-    align-items: center;
+  display:  flex;
+  border-left: 1px solid $DarkShade10;
+  padding-left: 20px;
+  height: 30px;
+  align-items: center;
 }
 
 @import '../../variables/variables.scss';

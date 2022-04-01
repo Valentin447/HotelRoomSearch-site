@@ -1,10 +1,10 @@
 .toggle__switch_on .toggle__switch-field{
-    border-color: $Purple;
+  border-color: $Purple;
 }
 
 .toggle__switch_on .toggle__switch-point{
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    transform: translate3d(19px, 0px, 0px);
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  transform: translate3d(19px, 0px, 0px);
 }
 
 @import '../../../variables/variables.scss';

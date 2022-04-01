@@ -1,31 +1,31 @@
 .search-room-container{
-    display: flex;
-    margin: 100px auto 0 auto;
-    max-width: 1161px;
-    @media(max-width: 1180px){
-        padding-left: 10px;
-    }
-    @media(max-width: 610px){
-        flex-direction: column;
-        align-items: center;
-    }
-    @media (max-width: 600px) {
-        margin: 170px auto 0 auto;
-    }
+  display: flex;
+  margin: 100px auto 0 auto;
+  max-width: 1161px;
+  @media(max-width: 1180px){
+      padding-left: 10px;
+  }
+  @media(max-width: 610px){
+      flex-direction: column;
+      align-items: center;
+  }
+  @media (max-width: 600px) {
+      margin: 170px auto 0 auto;
+  }
 }
 
 .search-room-found-rooms{
-    margin-left: 60px;
-    @media (max-width: 1190px) {
-        margin: 0 10px;
-    }
+  margin-left: 60px;
+  @media (max-width: 1190px) {
+      margin: 0 10px;
+  }
 }
 
 .search-room-line-above-footer{
-    width: 100%;
-    height: 0;
-    border-top: 1px solid $DarkShade25;
-    margin-top: 72px;
+  width: 100%;
+  height: 0;
+  border-top: 1px solid $DarkShade25;
+  margin-top: 72px;
 }
 @import "./../../blocks/variables/variables.scss";
 @import "./../../blocks/filter/filter.scss";

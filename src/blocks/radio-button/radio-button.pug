@@ -1,7 +1,6 @@
 mixin radio-button(idRadioButon, value)
-    .radio-button(class!=attributes.class)
-        .radio-button-circle
-        .radio-button-point
-        input.radio-button-input(type='radio', id=idRadioButon+value, name=idRadioButon, value=value)
-        label.radio-button-label(for=idRadioButon+value)=value
-        
+  .radio-button(class!=attributes.class)
+    .radio-button-circle
+    .radio-button-point
+    input.radio-button-input(type='radio', id=idRadioButon+value, name=idRadioButon, value=value)
+    label.radio-button-label(for=idRadioButon+value)=value

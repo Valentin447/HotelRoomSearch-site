@@ -1,7 +1,7 @@
 include ../__mark/checkbox__mark
 
 mixin checkbox__button(listId, nameItem)
-    input.checkbox__button(type='checkbox', name=nameItem, value=nameItem, id=listId+name)
-    .checkbox__button-paint
-        +checkbox__mark()
+  input.checkbox__button(type='checkbox', name=nameItem, value=nameItem, id=listId+name)
+  .checkbox__button-paint
+    +checkbox__mark()
 

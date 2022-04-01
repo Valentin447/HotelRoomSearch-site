@@ -1,103 +1,104 @@
 doctype html
 html(lang="ru")
-    head
-        title= 'Form Elements'
-    body.FormElements
-        .FormElementsCenterLayer
-            include ../../../blocks/elements-title/elements-title
-            include ../../../blocks/gray-logo/gray-logo
-            include ../../../blocks/text-field/text-field
-            include ../../../blocks/dropdown/dropdown
-            include ../../../blocks/subscription/subscription
-            include ../../../blocks/expandable-checkbox-list/expandable-checkbox-list
-            include ../../../blocks/icon-text/icon-text
-            include ../../../blocks/checkbox-buttons/checkbox-buttons
-            include ../../../blocks/radio-buttons/radio-buttons
-            include ../../../blocks/toggle/toggle
-            include ../../../blocks/like-button/like-button
-            include ../../../blocks/rate-button/rate-button
-            include ../../../blocks/comment/comment
-            include ../../../blocks/range-slider/range-slider
-            include ../../../blocks/button/button
-            include ../../../blocks/pagination/pagination
-            include ../../../blocks/bullet-list/bullet-list
+  head
+    title= 'Form Elements'
+    link(type="Image/x-icon" href="../assets/img/favicon.ico" rel="icon")
+  body.FormElements
+    .FormElementsCenterLayer
+      include ../../../blocks/elements-title/elements-title
+      include ../../../blocks/gray-logo/gray-logo
+      include ../../../blocks/text-field/text-field
+      include ../../../blocks/dropdown/dropdown
+      include ../../../blocks/subscription/subscription
+      include ../../../blocks/expandable-checkbox-list/expandable-checkbox-list
+      include ../../../blocks/icon-text/icon-text
+      include ../../../blocks/checkbox-buttons/checkbox-buttons
+      include ../../../blocks/radio-buttons/radio-buttons
+      include ../../../blocks/toggle/toggle
+      include ../../../blocks/like-button/like-button
+      include ../../../blocks/rate-button/rate-button
+      include ../../../blocks/comment/comment
+      include ../../../blocks/range-slider/range-slider
+      include ../../../blocks/button/button
+      include ../../../blocks/pagination/pagination
+      include ../../../blocks/bullet-list/bullet-list
 
-            
-            span.signature.signatureTextFieldDefault DEFAULT
-            span.signature.signatureTextFieldHoverFocus HOVER / FOCUS
-            span.signature.signatureDropdownRoomsDefault DEFAULT
-            span.signature.signatureDropdownRoomsExpanded EXPANDED
 
-            .FormElementLayout
-                .FormElement-column-1
-                    +textField('Email', 'Text Field', 'UiKitTextFieldDefault')
-                    +textField('This is pretty awesome', 'Text Field', 'UiKitTextFieldHoverFocus')(class='text-field_hover-focus')
-                    +dropdown('Сколько гостей', 'Dropdown')
-                    +textField('ДД.ММ.ГГГГ', 'masked text field', 'UiKitTextFieldMaskedDate')(class='text-field_masked-date')
-                    .dropdown-date-joint
-                        +dropdown('ДД.ММ.ГГГГ', 'date dropdown', 'dropdown_date')
-                        +dropdown('19.08.2019', 'date dropdown', 'dropdown_date')
-                    +dropdown('19 авг - 23 авг', 'filter date dropdown', 'dropdown_filter-date')
-                    .FormElement__subscription
-                        +subscription('subscription text field')
-                    +dropdown('2 спальни, 2 кровати...', 'dropdown', 'dropdown_rooms', 'спальни', 'кровати', 'ванные комнаты','2','2','0')
-                    +dropdown('2 спальни, 2 кровати...', 'dropdown', 'dropdown_rooms', 'спальни', 'кровати', 'ванные комнаты','2','2','0')
-                    +expandable-checkbox-list('expandable checkbox list', 'expandable-checkbox-list-1', 'Завтрак')
-                    +expandable-checkbox-list('expandable checkbox list', 'expandable-checkbox-list-2', 'Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь')
-                    .icon-text-list
-                        +icon-text('insert_emoticon', 'Комфорт', 'Шумопоглощающие стены')
-                        +icon-text('location_city', 'Удобство', 'Окно в каждой из спален')
+      span.signature.signatureTextFieldDefault DEFAULT
+      span.signature.signatureTextFieldHoverFocus HOVER / FOCUS
+      span.signature.signatureDropdownRoomsDefault DEFAULT
+      span.signature.signatureDropdownRoomsExpanded EXPANDED
 
-                .FormElement-column-2
-                    +checkbox-buttons('Checkbox Buttons', 'checkbox-buttons-1', 'Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)')
-                    +elementsTitle('Radio Buttons')
-                    +radio-buttons('RadioButtonsFormElement', 'Мужчина', 'Женщина')
-                    +elementsTitle('Toggle')
-                    +toggle('Получать спецпредложения', 'FormElement-column-2-toggle-1')
-                    +toggle('Получать спецпредложения', 'FormElement-column-2-toggle-2')
+      .FormElementLayout
+        .FormElement-column-1
+          +textField('Email', 'Text Field', 'UiKitTextFieldDefault')
+          +textField('This is pretty awesome', 'Text Field', 'UiKitTextFieldHoverFocus')(class='text-field_hover-focus')
+          +dropdown('Сколько гостей', 'Dropdown')
+          +textField('ДД.ММ.ГГГГ', 'masked text field', 'UiKitTextFieldMaskedDate')(class='text-field_masked-date')
+          .dropdown-date-joint
+            +dropdown('ДД.ММ.ГГГГ', 'date dropdown', 'dropdown_date')
+            +dropdown('19.08.2019', 'date dropdown', 'dropdown_date')
+          +dropdown('19 авг - 23 авг', 'filter date dropdown', 'dropdown_filter-date')
+          .FormElement__subscription
+            +subscription('subscription text field')
+          +dropdown('2 спальни, 2 кровати...', 'dropdown', 'dropdown_rooms', 'спальни', 'кровати', 'ванные комнаты','2','2','0')
+          +dropdown('2 спальни, 2 кровати...', 'dropdown', 'dropdown_rooms', 'спальни', 'кровати', 'ванные комнаты','2','2','0')
+          +expandable-checkbox-list('expandable checkbox list', 'expandable-checkbox-list-1', 'Завтрак')
+          +expandable-checkbox-list('expandable checkbox list', 'expandable-checkbox-list-2', 'Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь')
+          .icon-text-list
+            +icon-text('insert_emoticon', 'Комфорт', 'Шумопоглощающие стены')
+            +icon-text('location_city', 'Удобство', 'Окно в каждой из спален')
 
-                    +elementsTitle('like button')
-                    .form-element-like-buttons
-                        .form-element-like-buttons-dont-like
-                            +like-button('2')
-                        .form-element-like-buttons-like
-                            +like-button('11')
-                    
-                    +elementsTitle('rate button')
-                    .form-element-rate-button
-                        .form-element-rate-button-1
-                            +rate-button(4)
-                        .form-element-rate-button-2
-                            +rate-button(5)
+        .FormElement-column-2
+          +checkbox-buttons('Checkbox Buttons', 'checkbox-buttons-1', 'Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)')
+          +elementsTitle('Radio Buttons')
+          +radio-buttons('RadioButtonsFormElement', 'Мужчина', 'Женщина')
+          +elementsTitle('Toggle')
+          +toggle('Получать спецпредложения', 'FormElement-column-2-toggle-1')
+          +toggle('Получать спецпредложения', 'FormElement-column-2-toggle-2')
 
-                    +dropdown('Сколько гостей', 'dropdown','dropdown_guests', 'взрослые', 'дети', 'младенцы','0','0','0')
+          +elementsTitle('like button')
+          .form-element-like-buttons
+            .form-element-like-buttons-dont-like
+              +like-button('2')
+            .form-element-like-buttons-like
+              +like-button('11')
 
-                    +elementsTitle('Rich Checkbox Buttons')
-                    .form-element-rich-checkbox-buttons
-                        +checkbox('checkbox-buttons-rich-id', 'Широкий коридор', 'Ширина коридоров в номере', 'не менее 91 см.')
-                        +checkbox('checkbox-buttons-rich-id', 'Помощник для инвалидов', 'На 1 этаже вас встретит специалист','и проводит до номера.')
-                    
-                    +comment('Мурад Сарафанов', '5 дней назад', '11', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.', '1')
-                
-                .FormElement-column-3
-                    +range-slider('Range Slider')
+          +elementsTitle('rate button')
+          .form-element-rate-button
+            .form-element-rate-button-1
+              +rate-button(4)
+            .form-element-rate-button-2
+              +rate-button(5)
 
-                    +elementsTitle('Buttons')
-                    .FormElement-column-3__buttons
-                        +button({value:"CLICK ME", mod: ["block"]})
-                        +button({value:"CLICK ME", mod: ["block"]})
-                        +button({value:"CLICK ME", mod: ["bordered","block"]})
-                        +button({value:"CLICK ME", mod: ["bordered","block"]})
-                        .buttons-no-frame-position
-                            +button({value:"CLICK ME", mod: ["fill-none"]})
-                            +button({value:"CLICK ME", mod: ["fill-none"]})
-                    +button({link:"#", value:"перейти к оплате", mod: ["with-arrow","block"]})
-                    .empty
-                    +elementsTitle('pagination')
-                    +pagination()
+          +dropdown('Сколько гостей', 'dropdown','dropdown_guests', 'взрослые', 'дети', 'младенцы','0','0','0')
 
-                    +dropdown('Сколько гостей', 'dropdown','dropdown_guests', 'взрослые', 'дети', 'младенцы','2','1','0')
-                    .FormElement-column-3-bullet-list
-                        +elementsTitle('bullet list')
-                        +bullet-list('Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00')
+          +elementsTitle('Rich Checkbox Buttons')
+          .form-element-rich-checkbox-buttons
+            +checkbox('checkbox-buttons-rich-id', 'Широкий коридор', 'Ширина коридоров в номере', 'не менее 91 см.')
+            +checkbox('checkbox-buttons-rich-id', 'Помощник для инвалидов', 'На 1 этаже вас встретит специалист','и проводит до номера.')
+
+          +comment({name:"Мурад Сарафанов", date:"5 дней назад", likeCounter: 11, userNumber:1, text: "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
+
+        .FormElement-column-3
+          +range-slider('Range Slider')
+
+          +elementsTitle('Buttons')
+          .FormElement-column-3__buttons
+            +button({value:"CLICK ME", mod: ["block"]})
+            +button({value:"CLICK ME", mod: ["block"]})
+            +button({value:"CLICK ME", mod: ["bordered","block"]})
+            +button({value:"CLICK ME", mod: ["bordered","block"]})
+            .buttons-no-frame-position
+              +button({value:"CLICK ME", mod: ["fill-none"]})
+              +button({value:"CLICK ME", mod: ["fill-none"]})
+          +button({link:"#", value:"перейти к оплате", mod: ["with-arrow","block"]})
+          .empty
+          +elementsTitle('pagination')
+          +pagination()
+
+          +dropdown('Сколько гостей', 'dropdown','dropdown_guests', 'взрослые', 'дети', 'младенцы','2','1','0')
+          .FormElement-column-3-bullet-list
+            +elementsTitle('bullet list')
+            +bullet-list('Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00')
 

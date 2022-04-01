@@ -1,19 +1,19 @@
 .dropdown__counter-value{
-    height: 30px;
-    min-width: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 1px;
+  height: 30px;
+  min-width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1px;
 }
 
 .dropdown__counter-value-number{
-    color: $DarkShade100;
-    font-family: 'Montserrat';
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 24px;
-    text-transform: uppercase;
-    border: none;
-    text-align: center;
+  color: $DarkShade100;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  border: none;
+  text-align: center;
 }

@@ -2,14 +2,13 @@ include ../dropdown/dropdown
 include ../button/button
 
 .card-search
-    p(class='card-search-title ') Найдём номера под ваши пожелания
-    .card-search-date
-        .card-search-date-start
-            +dropdown('ДД.ММ.ГГГГ', 'прибытие', 'dropdown_date')
-        .card-search-date-end
-            +dropdown('ДД.ММ.ГГГГ', 'выезд', 'dropdown_date')
-    .card-search-dropdown-guests
-        +dropdown('Сколько гостей', 'гости','dropdown_guests', 'взрослые', 'дети', 'младенцы','0','0','0') 
-    .card-search-button
-        +button({value: "подобрать номер", mod:["block", "with-arrow"]})
-        
+  p(class='card-search-title ') Найдём номера под ваши пожелания
+  .card-search-date
+    .card-search-date-start
+      +dropdown('ДД.ММ.ГГГГ', 'прибытие', 'dropdown_date')
+    .card-search-date-end
+      +dropdown('ДД.ММ.ГГГГ', 'выезд', 'dropdown_date')
+  .card-search-dropdown-guests
+    +dropdown('Сколько гостей', 'гости','dropdown_guests', 'взрослые', 'дети', 'младенцы','0','0','0') 
+  .card-search-button
+    +button({value: "подобрать номер", mod:["block", "with-arrow"]})

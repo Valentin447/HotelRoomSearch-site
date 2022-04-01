@@ -1,0 +1,19 @@
+.button_bordered {
+  background: none;
+  color: $Purple;
+  min-height: $height - $padding * 2 - $border-width * 2;
+  line-height: $height - $padding * 2 - $border-width * 2;
+  border: solid $border-width transparent;
+  background-image: linear-gradient(white, white), $linear-gradient;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  -webkit-background-clip: padding-box, border-box;
+  color: $Purple;
+  &:hover {
+    border: solid $border-width transparent;
+    background-image: linear-gradient(white, white), $linear-gradient05;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    -webkit-background-clip: padding-box, border-box;
+  }
+}

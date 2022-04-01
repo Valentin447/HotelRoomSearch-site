@@ -1,23 +1,23 @@
 .found-rooms__title{
-    font-family: "Montserrat";
-    font-weight: bold;
-    font-size: 24px;
-    color: $DarkShade100;
-    margin-bottom: 21px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 24px;
+  color: $DarkShade100;
+  margin-bottom: 21px;
 }
 
 .found-rooms .pagination{
-    margin: 45px auto 0 auto;
+  margin: 45px auto 0 auto;
 
-    // @media (min-width: 1158px) {
-    //     margin: 50px 0 0 156px;
-    // }
-    // @media (min-width: 1440px) {
-    //     margin: 50px 0 0 297px;
-    // }
-    // @media (min-width: 1722px) {
-    //     margin: 50px 0 0 438px;
-    // }
+  // @media (min-width: 1158px) {
+  //     margin: 50px 0 0 156px;
+  // }
+  // @media (min-width: 1440px) {
+  //     margin: 50px 0 0 297px;
+  // }
+  // @media (min-width: 1722px) {
+  //     margin: 50px 0 0 438px;
+  // }
 }
 
 @import "__room-cards/found-rooms__room-cards.scss";

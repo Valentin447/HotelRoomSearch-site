@@ -1,0 +1,8 @@
+.comments-list__top {
+  display          : flex;
+  justify-content  : space-between;
+}
+.comments-list__title{
+ line-height: 22px;
+}
+@import "./__counter/comments-list__counter.scss";
